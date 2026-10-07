@@ -1,0 +1,1477 @@
+{
+  "1": {
+    "title": "Loveland Day One • ADE Opening",
+    "primary": {
+      "url": "https://loveland.nl/ade/",
+      "provider": "loveland",
+      "type": "generic_homepage",
+      "status_detection": "none",
+      "confidence": "low"
+    },
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://loveland.nl/ade/",
+      "ticketLink": "https://loveland.nl/ade/"
+    },
+    "proposed_links": {
+      "reason": "Current link is the generic Loveland ADE hub; keep until the event is verified."
+    },
+    "notes": "No Loveland ADE show found for Wed 21 Oct 12:00-17:00 at De Marktkantine (ADE and loveland.nl list 11 shows, none match). Needs verification that this event exists as described."
+  },
+  "2": {
+    "title": "Zwart Goud ADE Instore Sessions",
+    "primary": {
+      "url": "https://www.amsterdam-dance-event.nl/en/program/2026/zwart-goud-ade-day-1/2889003/",
+      "provider": "ade",
+      "type": "ade_page",
+      "status_detection": "manual",
+      "confidence": "medium"
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/zwart-goud-ade-day-1/2889003/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://events.musicofourdesire.com/events/Amsterdam/ade-free",
+      "ticketLink": "https://zwartgoud.org/"
+    },
+    "proposed_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/zwart-goud-ade-day-1/2889003/",
+      "ticketLink": "https://www.amsterdam-dance-event.nl/en/program/2026/zwart-goud-ade-day-1/2889003/",
+      "reason": "Current eventLink (events.musicofourdesire.com) returns 403 to scripts and is a third-party aggregator; the ADE page is official."
+    },
+    "notes": "ADE: Zwart Goud ADE Day 1, Wed 21 Oct 16:00-21:00 at Zwart Goud (app says 12:00-17:00, from 16:00). Free store session. Free in the app; keep manual."
+  },
+  "3": {
+    "title": "Jeff Mills: The Night Watch (Screening)",
+    "primary": {
+      "url": "https://www.amsterdam-dance-event.nl/en/program/2026/audio-obscura-x-jeff-mills-present-jeff-mills-interpretation-of-rembrandts-de-nachtwacht/2923771/",
+      "provider": "ade",
+      "type": "ade_page",
+      "status_detection": "manual",
+      "confidence": "low"
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/audio-obscura-x-jeff-mills-present-jeff-mills-interpretation-of-rembrandts-de-nachtwacht/2923771/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://audio-obscura.com/",
+      "ticketLink": "https://audio-obscura.com/"
+    },
+    "notes": "ADE lists this Rijksmuseum show on Thu 22, Fri 23, Sat 24 and Sun 25 Oct 12:00-16:00 only, not Wed 21. Day differs from the app. Ticketing unclear (shown as free in the app). Needs verification."
+  },
+  "4": {
+    "title": "ADE Lab Discovery & Gear Playground",
+    "primary": {
+      "url": "https://www.amsterdam-dance-event.nl/en/ade-lab/",
+      "provider": "ade",
+      "type": "official_event_page",
+      "status_detection": "manual",
+      "confidence": "medium"
+    },
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/ade-lab/",
+      "ticketLink": "https://www.amsterdam-dance-event.nl/en/ade-lab/"
+    },
+    "notes": "ADE's official ADE Lab page. Generic, not a single ticketed event. Free in the app; keep manual."
+  },
+  "5": {
+    "title": "OGUZ: One Million Black Tour Amsterdam",
+    "primary": {
+      "url": "https://www.amsterdam-dance-event.nl/en/program/2026/one-million-black-tour-amsterdam/2916897/",
+      "provider": "ade",
+      "type": "ade_page",
+      "status_detection": "none",
+      "confidence": "medium"
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/one-million-black-tour-amsterdam/2916897/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/one-million-black-tour-amsterdam/2916897/",
+      "ticketLink": "https://www.amsterdam-dance-event.nl/en/program/2026/one-million-black-tour-amsterdam/2916897/"
+    },
+    "notes": "ADE: OGUZ One Million Black Tour, Wed 21 Oct 22:00-01:00 at WestWeelde (Klonneplein). App says De Unie, 17:00-23:00. Venue and time conflict. ADE page has free entry / RSVP wording and no ticket-shop link."
+  },
+  "6": {
+    "title": "The Early Shift • Pizza & Rave Sessions",
+    "primary": {
+      "url": "https://nl.ra.co/events/2531051",
+      "provider": "ra.co",
+      "type": "ticket_shop",
+      "status_detection": "none",
+      "confidence": "high"
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/the-early-shift/2861755/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/the-early-shift/2861755/",
+      "ticketLink": "https://www.amsterdam-dance-event.nl/en/program/2026/the-early-shift/2861755/"
+    },
+    "proposed_links": {
+      "reason": "Current ticketLink is the ADE page, which is fine; RA is the actual shop but cannot be checked."
+    },
+    "notes": "ADE: The Early Shift, Wed 21 Oct 18:00-00:00 at Toekomstmuziek. Ticket shop is Resident Advisor, which returns 403 to scripts."
+  },
+  "7": {
+    "title": "Off The Record: Kevin Saunderson Special",
+    "primary": {
+      "url": "https://www.amsterdam-dance-event.nl/en/program/2026/the-social-hub-presents-off-the-record-with-kevin-saunderson/2905158/",
+      "provider": "ade",
+      "type": "ade_page",
+      "status_detection": "manual",
+      "confidence": "medium"
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/the-social-hub-presents-off-the-record-with-kevin-saunderson/2905158/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://evenitto.com/en/ade",
+      "ticketLink": "https://evenitto.com/en/ade"
+    },
+    "proposed_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/the-social-hub-presents-off-the-record-with-kevin-saunderson/2905158/",
+      "ticketLink": "https://www.amsterdam-dance-event.nl/en/program/2026/the-social-hub-presents-off-the-record-with-kevin-saunderson/2905158/",
+      "reason": "More specific than the generic thesocialhub.co homepage."
+    },
+    "notes": "ADE: Off the Record with Kevin Saunderson, Wed 21 Oct 19:00-22:00 at The Social Hub. Free in the app; keep manual."
+  },
+  "8": {
+    "title": "In Trance We Trust • Thuishaven Showcase",
+    "primary": {
+      "url": "https://thuishaven.nl/",
+      "provider": "thuishaven",
+      "type": "official_event_page",
+      "status_detection": "html_signal",
+      "confidence": "high",
+      "observed_2026_10_07": "available (TICKETS label)",
+      "detection_note": "Parse the listing row for 21-10-2026 'In Trance we Trust'."
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/in-trance-we-trust/2816279/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://partyflock.nl/party/480826:In-Trance-We-Trust",
+      "ticketLink": "https://partyflock.nl/party/480826:In-Trance-We-Trust"
+    },
+    "notes": "Thuishaven's listing has a row 'In Trance we Trust ... 21-10-2026 21.00-04.00' with a TICKETS or SOLD OUT label. Match by date and title. Ticket shop behind it is Weeztix (JavaScript only)."
+  },
+  "9": {
+    "title": "📌 Awakenings Opening Night • Warehouse",
+    "primary": {
+      "url": "https://www.awakenings.com/en/events/2026/10/ade-opening-night/397108/",
+      "provider": "awakenings",
+      "type": "official_event_page",
+      "status_detection": "html_signal",
+      "confidence": "high",
+      "observed_2026_10_07": "available (no 'Sold out' label; availability is inferred from absence)",
+      "detection_note": "Find 'ADE 2026 - OPENING NIGHT' in the show list and check for a following 'Sold out'."
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/awakenings-ade-opening-night/2806420/",
+    "resale": {
+      "ticketswap_url": "https://www.ticketswap.com/awakenings-ade",
+      "match_confidence": "low",
+      "note": "Evergreen TicketSwap landing page for the promoter or festival. The 2026 edition could not be verified (TicketSwap blocks automated access), and one page may cover several days. Do not treat as a per-event mapping."
+    },
+    "current_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/awakenings-ade-opening-night/2806420/",
+      "ticketLink": "https://www.awakenings.com/en/events/2026/10/ade-opening-night/397108/"
+    },
+    "proposed_links": {
+      "ticketLink": "https://www.awakenings.com/en/events/2026/10/ade-opening-night/397108/",
+      "reason": "Current ticketLink www.awakenings.com/en/events/ade/ returns 404. Already applied in the local commit."
+    },
+    "notes": "Awakenings event page. Every Awakenings ADE page lists all ADE shows and labels sold-out ones 'Sold out'; Opening Night has no label."
+  },
+  "10": {
+    "title": "Lobster invites Bisque, Mella Dee & Samuel Deep",
+    "primary": {
+      "url": "https://www.amsterdam-dance-event.nl/en/program/2026/lobster-invites-bisque-kyra-khaldi-mella-dee-b2b-samuel-deep-techno-set/2834014/",
+      "provider": "ade",
+      "type": "ade_page",
+      "status_detection": "manual",
+      "confidence": "medium"
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/lobster-invites-bisque-kyra-khaldi-mella-dee-b2b-samuel-deep-techno-set/2834014/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://ra.co/events/1990422",
+      "ticketLink": "https://ra.co/events/1990422"
+    },
+    "notes": "ADE: Lobster invites Bisque, Kyra Khaldi, Mella Dee b2b Samuel Deep, Wed 21 Oct 22:00-07:00 at BRET (app says 23:00-07:00). No ticket link on the ADE page. Free in the app. Free in the app; keep manual."
+  },
+  "11": {
+    "title": "Free Your Mind x TeleTech ADE Kickoff",
+    "primary": {
+      "url": "https://freeyourmindfestival.nl/",
+      "provider": "freeyourmind",
+      "type": "official_event_page",
+      "status_detection": "html_signal",
+      "confidence": "high",
+      "observed_2026_10_07": "available (TICKETS label)",
+      "detection_note": "Parse the home-page list row for 21 oct, United Studio's."
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/free-your-mind-x-teletech/2865942/",
+    "resale": {
+      "ticketswap_url": "https://www.ticketswap.com/free-your-mind-ade",
+      "match_confidence": "low",
+      "note": "Evergreen TicketSwap landing page for the promoter or festival. The 2026 edition could not be verified (TicketSwap blocks automated access), and one page may cover several days. Do not treat as a per-event mapping."
+    },
+    "current_links": {
+      "eventLink": "https://freeyourmindfestival.nl/",
+      "ticketLink": "https://freeyourmindfestival.nl/"
+    },
+    "notes": "Free Your Mind's home page lists '21 oct Free Your Mind x Teletech ADE, United Studio's, 10:00 pm' with a TICKETS or SOLD OUT label."
+  },
+  "12": {
+    "title": "Armin van Buuren & Benwal • Gashouder",
+    "primary": {
+      "url": "https://tickets.gashouder.nl/s/fUPFba10",
+      "provider": "gashouder (vivenu)",
+      "type": "ticket_shop",
+      "status_detection": "html_signal",
+      "confidence": "high",
+      "observed_2026_10_07": "soldout (app says available)",
+      "detection_note": "Look for '[Sold Out]' in the page title. The 'available' state was not observed on any Gashouder page."
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/gashouder-presents-armin-van-buuren-benwal/2804804/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/gashouder-presents-armin-van-buuren-benwal/2804804/",
+      "ticketLink": "https://www.amsterdam-dance-event.nl/en/program/2026/gashouder-presents-armin-van-buuren-benwal/2804804/"
+    },
+    "notes": "Gashouder's own ticket page. Page title carries '[Sold Out]' and the body says 'Sold out'."
+  },
+  "13": {
+    "title": "OUTKZT 2026 • Boat Rave",
+    "primary": {
+      "url": "https://shop.weeztix.com/a426b640-2859-11f1-a9cb-7e126431635e/tickets?shop_code=qtdvcqfm",
+      "provider": "weeztix",
+      "type": "ticket_shop",
+      "status_detection": "none",
+      "confidence": "medium"
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/outkzt-ade-2026/2835965/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/outkzt-ade-2026/2835965/",
+      "ticketLink": "https://www.amsterdam-dance-event.nl/en/program/2026/outkzt-ade-2026/2835965/"
+    },
+    "notes": "ADE: OUTKZT 2026, Wed 21 Oct 16:00-04:00 at Het Veronica Schip. App says Thu 12:00-17:00, so the day differs. Weeztix is a JavaScript shell with no readable status."
+  },
+  "14": {
+    "title": "The Loft Sessions • 16th Floor Penthouse",
+    "primary": {
+      "url": "https://theloftamsterdam.com/",
+      "provider": "theloft",
+      "type": "generic_homepage",
+      "status_detection": "none",
+      "confidence": "low"
+    },
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/venues/adam-tower/15456/",
+      "ticketLink": "https://adamhotel.nl/the-loft/"
+    },
+    "proposed_links": {
+      "ticketLink": "https://theloftamsterdam.com/",
+      "reason": "Current ticketLink adamhotel.nl does not resolve. Fallback only, low confidence."
+    },
+    "notes": "Cannot tie this event to a specific Loft listing (Thu 12:00-17:00 on the 16th floor). The Loft's own site lists ADE shows with 'Sold out' labels, but none matches. adamhotel.nl does not resolve."
+  },
+  "15": {
+    "title": "OT301 ADE Underground Sessions",
+    "primary": {
+      "url": "https://ot301.nl/",
+      "provider": "ot301",
+      "type": "generic_homepage",
+      "status_detection": "none",
+      "confidence": "low"
+    },
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://ot301.nl/",
+      "ticketLink": "https://ot301.nl/"
+    },
+    "notes": "No ADE listing found for OT301 on ADE 2026. Generic homepage."
+  },
+  "16": {
+    "title": "BOMA x Nude Project In-Store Rave",
+    "primary": {
+      "url": "https://www.amsterdam-dance-event.nl/en/program/2026/boma-x-nude-project/2908056/",
+      "provider": "ade",
+      "type": "ade_page",
+      "status_detection": "manual",
+      "confidence": "high"
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/boma-x-nude-project/2908056/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/boma-x-nude-project/2908056/",
+      "ticketLink": "https://www.amsterdam-dance-event.nl/en/program/2026/boma-x-nude-project/2908056/"
+    },
+    "notes": "ADE: NUDE PROJECT xxx BOMA, Thu 22 Oct 18:00-21:00 at Nude Project Store. In-store, free. Free in the app; keep manual."
+  },
+  "17": {
+    "title": "📌 Miss Monique presents Siona Records",
+    "primary": {
+      "url": "https://het-sieraad.nl/",
+      "provider": "het-sieraad",
+      "type": "official_event_page",
+      "status_detection": "html_signal",
+      "confidence": "high",
+      "observed_2026_10_07": "available (TICKETS label; app says mychoice)",
+      "detection_note": "Parse the row 'Miss Monique presents Siona'."
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/miss-monique-presents-siona/2810281/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/miss-monique-presents-siona/2810281/",
+      "ticketLink": "https://www.ticketswap.com/search?q=Miss+Monique+Het+Sieraad"
+    },
+    "proposed_links": {
+      "ticketLink": "https://het-sieraad.nl/",
+      "reason": "Current ticketLink is a TicketSwap search URL, which should not be stored."
+    },
+    "notes": "Het Sieraad's listing has 'ADE | Miss Monique presents Siona ... THU 22 OCT 17:00-22:30' with TICKETS or SOLD OUT. Shop behind it is Stager (disallowed by its robots.txt)."
+  },
+  "18": {
+    "title": "Awakenings • Eric Prydz Sunset Session",
+    "primary": {
+      "url": "https://www.amsterdam-dance-event.nl/en/program/2026/gashouder-presents-eric-prydz/2834978/",
+      "provider": "ade",
+      "type": "ade_page",
+      "status_detection": "none",
+      "confidence": "medium"
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/gashouder-presents-eric-prydz/2834978/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/gashouder-presents-eric-prydz/2834978/",
+      "ticketLink": "https://www.ticketswap.com/search?q=Eric+Prydz+Awakenings"
+    },
+    "proposed_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/gashouder-presents-eric-prydz/2834978/",
+      "ticketLink": "https://www.amsterdam-dance-event.nl/en/program/2026/gashouder-presents-eric-prydz/2834978/",
+      "reason": "Current eventLink is a dead ADE page (404); ticketLink is a TicketSwap search URL."
+    },
+    "notes": "ADE: Gashouder Presents Eric Prydz, Thu 22 Oct 18:00-22:00 at Gashouder (right event). The ADE page has no ticket-shop link. Gashouder uses vivenu short links like events 12 and 22; the one for this event was not found, so detection is not possible yet."
+  },
+  "19": {
+    "title": "Five Pizzas x Kitchen Frequencies",
+    "primary": {
+      "url": "https://www.amsterdam-dance-event.nl/en/program/2026/five-pizzas-ade-session/2890264/",
+      "provider": "ade",
+      "type": "ade_page",
+      "status_detection": "manual",
+      "confidence": "high"
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/five-pizzas-ade-session/2890264/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/five-pizzas-ade-session/2890264/",
+      "ticketLink": "https://www.amsterdam-dance-event.nl/en/program/2026/five-pizzas-ade-session/2890264/"
+    },
+    "notes": "ADE: Five Pizzas ADE Session, Thu 22 Oct 17:30-22:00. Free in the app; keep manual."
+  },
+  "20": {
+    "title": "Paul Kalkbrenner LIVE x Loveland",
+    "primary": {
+      "url": "https://shop.tickets.cm.com/77c1c778-023b-1153-0aca-5df47f8c1502",
+      "provider": "cm.com tickets",
+      "type": "ticket_shop",
+      "status_detection": "none",
+      "confidence": "high"
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/paul-kalkbrenner-live-x-loveland/2846832/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/paul-kalkbrenner-live-x-loveland/2846832/",
+      "ticketLink": "https://loveland.nl/ade/"
+    },
+    "proposed_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/paul-kalkbrenner-live-x-loveland/2846832/",
+      "reason": "Current eventLink is a dead ADE page (404). Already applied in the local commit."
+    },
+    "notes": "ADE: Paul Kalkbrenner LIVE x Loveland, Thu 22 Oct 19:00-22:30 at Theater Amsterdam (app says 17:00-22:30). The shop is a JavaScript shell with no readable status."
+  },
+  "21": {
+    "title": "Awakenings • Drumcode Showcase",
+    "primary": {
+      "url": "https://www.awakenings.com/en/events/2026/10/drumcode/397113/",
+      "provider": "awakenings",
+      "type": "official_event_page",
+      "status_detection": "html_signal",
+      "confidence": "high",
+      "observed_2026_10_07": "soldout (matches the app)",
+      "detection_note": "Find 'ADE 2026 - DRUMCODE' in the show list and check for a following 'Sold out'."
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/awakenings-ade-drumcode/2806492/",
+    "resale": {
+      "ticketswap_url": "https://www.ticketswap.com/awakenings-ade",
+      "match_confidence": "low",
+      "note": "Evergreen TicketSwap landing page for the promoter or festival. The 2026 edition could not be verified (TicketSwap blocks automated access), and one page may cover several days. Do not treat as a per-event mapping."
+    },
+    "current_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/awakenings-ade-drumcode/2806492/",
+      "ticketLink": "https://www.ticketswap.com/search?q=Awakenings+Drumcode"
+    },
+    "proposed_links": {
+      "ticketLink": "https://www.awakenings.com/en/events/2026/10/drumcode/397113/",
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/awakenings-ade-drumcode/2806492/",
+      "reason": "Current ticketLink is a TicketSwap search URL."
+    },
+    "notes": "Awakenings Drumcode page. The show list marks it 'Sold out'. Same list covers all Awakenings ADE shows."
+  },
+  "22": {
+    "title": "I Hate Models & Nico Moreno Invite • Gashouder",
+    "primary": {
+      "url": "https://tickets.gashouder.nl/s/hDH1zEBO",
+      "provider": "gashouder (vivenu)",
+      "type": "ticket_shop",
+      "status_detection": "html_signal",
+      "confidence": "high",
+      "observed_2026_10_07": "soldout (matches the app)",
+      "detection_note": "Look for '[Sold Out]' in the page title."
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/gashouder-presents-i-hate-models-nico-moreno-invite/2804806/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none",
+      "other_resale_url": "https://event.resale.gashouder.nl/en/6abd392c337e571fa63b40be/show/6a27c30758da8fb570e00a8f"
+    },
+    "current_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/gashouder-presents-i-hate-models-nico-moreno-invite/2804806/",
+      "ticketLink": "https://event.resale.gashouder.nl/en/6abd392c337e571fa63b40be/show/6a27c30758da8fb570e00a8f?ticketSellerId=230&quantity=3"
+    },
+    "proposed_links": {
+      "reason": "Already updated in the local commit (links, title, time, line-up, sold out). The resale link carries ticketSellerId=230&quantity=3, which is one specific listing."
+    },
+    "notes": "Gashouder ticket page; title '[Sold Out]'. Curator-provided resale page: event.resale.gashouder.nl (returns 403 to scripts)."
+  },
+  "23": {
+    "title": "Free Your Mind x TeleTech • 4 The People",
+    "primary": {
+      "url": "https://freeyourmindfestival.nl/",
+      "provider": "freeyourmind",
+      "type": "official_event_page",
+      "status_detection": "html_signal",
+      "confidence": "high",
+      "observed_2026_10_07": "available (TICKETS label)",
+      "detection_note": "Parse the home-page list row for 22 oct, Hemkade 48."
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/free-your-mind-x-teletech-4-the-people/2802790/",
+    "resale": {
+      "ticketswap_url": "https://www.ticketswap.com/free-your-mind-ade",
+      "match_confidence": "low",
+      "note": "Evergreen TicketSwap landing page for the promoter or festival. The 2026 edition could not be verified (TicketSwap blocks automated access), and one page may cover several days. Do not treat as a per-event mapping."
+    },
+    "current_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/free-your-mind-x-teletech-4-the-people/2802790/",
+      "ticketLink": "https://freeyourmindfestival.nl/"
+    },
+    "notes": "Free Your Mind home page lists '22 oct Free Your Mind x Teletech: 4 the People, Hemkade 48, 6:00 pm' with TICKETS or SOLD OUT. The shop is cm.com (JavaScript only)."
+  },
+  "24": {
+    "title": "DGTL ADE Thursday • NDSM Docklands",
+    "primary": {
+      "url": "https://dgtl-festival.com/en/dgtl-ade/dgtl-ade-thursday/",
+      "provider": "dgtl",
+      "type": "official_event_page",
+      "status_detection": "html_signal",
+      "confidence": "medium",
+      "observed_2026_10_07": "soldout (app says available)",
+      "detection_note": "Check the page title for the 'SOLD OUT - ' prefix."
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/dgtl-ade-thursday/2803914/",
+    "resale": {
+      "ticketswap_url": "https://ticketswap.com/dgtl-ade",
+      "match_confidence": "low",
+      "note": "Evergreen TicketSwap landing page for the promoter or festival. The 2026 edition could not be verified (TicketSwap blocks automated access), and one page may cover several days. Do not treat as a per-event mapping."
+    },
+    "current_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/dgtl-ade-thursday/2803914/",
+      "ticketLink": "https://dgtl-festival.com/en/dgtl-amsterdam/"
+    },
+    "proposed_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/dgtl-ade-thursday/2803914/",
+      "ticketLink": "https://dgtl-festival.com/en/dgtl-ade/dgtl-ade-thursday/",
+      "reason": "Current eventLink is a dead ADE page (404); dgtl.nl moved to dgtl-festival.com. Event link already applied locally."
+    },
+    "notes": "DGTL page title starts with 'SOLD OUT - ' when sold out. ADE lists DGTL Thursday 17:00-23:00 at NDSM Warehouse; the app says 23:00-04:00 (peak night), so the time conflicts."
+  },
+  "25": {
+    "title": "KI/KI 5 Hours Non-Stop • Ziggo Dome",
+    "primary": {
+      "url": "https://www.mojo.nl/concerten/kiki",
+      "provider": "mojo",
+      "type": "official_event_page",
+      "status_detection": "html_signal",
+      "confidence": "medium",
+      "observed_2026_10_07": "unclear which day is sold out",
+      "detection_note": "Parse the section 'donderdag 22 oktober 2026'."
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/ki-ki-5-hours/2802115/",
+    "resale": {
+      "ticketswap_url": "https://ticketswap.com/kiki-ade",
+      "match_confidence": "low",
+      "note": "Evergreen TicketSwap landing page for the promoter or festival. The 2026 edition could not be verified (TicketSwap blocks automated access), and one page may cover several days. Do not treat as a per-event mapping."
+    },
+    "current_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/ki-ki-5-hours/2802115/",
+      "ticketLink": "https://www.amsterdam-dance-event.nl/en/program/2026/ki-ki-5-hours/2802115/"
+    },
+    "proposed_links": {
+      "reason": "Current links (ADE page 2802115) work."
+    },
+    "notes": "Promoter page for KI/KI 5 Hours on 22 and 23 Oct at Ziggo Dome. One page, two day sections, with a 'Kaarten UITVERKOCHT' label that appears once. Day attribution needs verification before it can be trusted. Tickets are sold via Ticketmaster."
+  },
+  "26": {
+    "title": "Amsterdam Techno Sessions • Late Basement",
+    "primary": {
+      "url": "https://ra.co/events/2519124",
+      "provider": "ra.co",
+      "type": "ticket_shop",
+      "status_detection": "none",
+      "confidence": "medium"
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/amsterdam-techno-sessions-x-paradox-music-ade-showcase/2830708/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/amsterdam-techno-sessions-x-paradox-music-ade-showcase/2830708/",
+      "ticketLink": "https://www.amsterdam-dance-event.nl/en/program/2026/amsterdam-techno-sessions-x-paradox-music-ade-showcase/2830708/"
+    },
+    "notes": "ADE: Amsterdam Techno Sessions x Paradox Music, Thu 22 Oct 22:00-08:00 at Club John Doe. App times (04:00-08:00+) look like the late part only. RA is blocked to scripts."
+  },
+  "27": {
+    "title": "The Loft Friday Sessions • 16th-Floor Panorama",
+    "primary": {
+      "url": "https://theloftamsterdam.com/",
+      "provider": "theloft",
+      "type": "generic_homepage",
+      "status_detection": "none",
+      "confidence": "low"
+    },
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/venues/adam-tower/15456/",
+      "ticketLink": "https://www.amsterdam-dance-event.nl/en/program/venues/adam-tower/15456/"
+    },
+    "notes": "No matching Loft listing for Fri 12:00-17:00. The Loft's own site lists ADE shows with 'Sold out' labels, but none matches this event."
+  },
+  "28": {
+    "title": "Vinyl & Waves Session • Het Veronica Schip",
+    "primary": {
+      "url": "https://hetveronicaschip.nl/",
+      "provider": "hetveronicaschip",
+      "type": "generic_homepage",
+      "status_detection": "manual",
+      "confidence": "low"
+    },
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://hetveronicaschip.nl/",
+      "ticketLink": "https://hetveronicaschip.nl/"
+    },
+    "proposed_links": {
+      "eventLink": "https://hetveronicaschip.nl/",
+      "ticketLink": "https://hetveronicaschip.nl/",
+      "reason": "Old domain has a certificate error. Already applied in the local commit."
+    },
+    "notes": "No ADE listing found for a vinyl session at Het Veronica Schip. veronicaschip.nl redirects to hetveronicaschip.nl. Free in the app; keep manual."
+  },
+  "29": {
+    "title": "Audio-Visual Experience • NDSM Loods",
+    "primary": {
+      "url": "https://ndsmloods.nl/",
+      "provider": "ndsmloods",
+      "type": "generic_homepage",
+      "status_detection": "none",
+      "confidence": "low"
+    },
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://ndsmloods.nl",
+      "ticketLink": "https://ndsmloods.nl"
+    },
+    "notes": "No ADE listing found. Generic homepage."
+  },
+  "30": {
+    "title": "ADE Lab Friday Sessions • Westergas",
+    "primary": {
+      "url": "https://www.amsterdam-dance-event.nl/en/ade-lab/",
+      "provider": "ade",
+      "type": "official_event_page",
+      "status_detection": "manual",
+      "confidence": "low"
+    },
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/ade-lab/",
+      "ticketLink": "https://www.amsterdam-dance-event.nl/en/ade-lab/"
+    },
+    "notes": "Generic ADE Lab page. No separate Friday listing found."
+  },
+  "31": {
+    "title": "Ritter Butzke x Casa ADE Cruise • Sailing Rave",
+    "primary": {
+      "url": "https://ra.co/events/2426450",
+      "provider": "ra.co",
+      "type": "ticket_shop",
+      "status_detection": "none",
+      "confidence": "high"
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/ritter-butzke-x-casa-ade-cruise/2894214/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/ritter-butzke-ade-cruise/2824510/",
+      "ticketLink": "https://www.amsterdam-dance-event.nl/en/program/2026/ritter-butzke-ade-cruise/2824510/"
+    },
+    "proposed_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/ritter-butzke-x-casa-ade-cruise/2894214/",
+      "ticketLink": "https://ra.co/events/2426450",
+      "reason": "Current ADE page (id 2824510) returns 404; the 2026 page has a new id."
+    },
+    "notes": "ADE: Ritter Butzke x Casa ADE Cruise, Fri 23 Oct 14:00-21:00 at SUPPER Cruise (exact match). RA is blocked to scripts."
+  },
+  "32": {
+    "title": "Breakfast Club x Kiosk Radio • Beach Pavilion & Brunch",
+    "primary": {
+      "url": "https://www.amsterdam-dance-event.nl/en/program/2026/breakfast-club-w-kiosk-radio-the-sound-of-belgium/2824185/",
+      "provider": "ade",
+      "type": "ade_page",
+      "status_detection": "none",
+      "confidence": "medium"
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/breakfast-club-w-kiosk-radio-the-sound-of-belgium/2824185/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/breakfast-club-w-kiosk-radio-the-sound-of-belgium/2824185/",
+      "ticketLink": "https://www.amsterdam-dance-event.nl/en/program/2026/breakfast-club-w-kiosk-radio-the-sound-of-belgium/2824185/"
+    },
+    "proposed_links": {
+      "reason": "Already applied in the local commit."
+    },
+    "notes": "ADE: Breakfast Club /w Kiosk Radio, Fri 23 Oct 18:00-04:00 at Pllek. App says 10:00-18:00, so the time differs. No ticket link on the ADE page."
+  },
+  "33": {
+    "title": "PIP Goes Skatecafe • Halfpipe Skatepark & Natural Wine",
+    "primary": {
+      "url": "https://skatecafe.weticket.io/ade-pip-goes-skatecafe",
+      "provider": "weticket",
+      "type": "ticket_shop",
+      "status_detection": "none",
+      "confidence": "high"
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/skatecafe-x-pip-den-haag/2811268/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/skatecafe-x-pip-den-haag/2811268/",
+      "ticketLink": "https://www.amsterdam-dance-event.nl/en/program/2026/skatecafe-x-pip-den-haag/2811268/"
+    },
+    "proposed_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/skatecafe-x-pip-den-haag/2811268/",
+      "ticketLink": "https://skatecafe.weticket.io/ade-pip-goes-skatecafe",
+      "reason": "Current ADE page returns 404. ADE link already applied locally; the weticket link is the real shop."
+    },
+    "notes": "ADE: PIP GOES SKATECAFE, Fri 23 Oct 16:00-04:00 at Skatecafe (exact match). The shop page is server-rendered, but no sold-out marker has been seen on this provider, so detection is unproven."
+  },
+  "34": {
+    "title": "Awakenings presents KNTXT / Filth on Acid • Gashouder",
+    "primary": {
+      "url": "https://www.awakenings.com/en/",
+      "provider": "awakenings",
+      "type": "generic_homepage",
+      "status_detection": "none",
+      "confidence": "none"
+    },
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://awakenings.com",
+      "ticketLink": "https://www.ticketswap.com/ade"
+    },
+    "notes": "No Awakenings, KNTXT or Filth on Acid listing found for Fri 18:00-22:30 at Gashouder on ADE or awakenings.com. Awakenings' 2026 ADE shows are at Sugarfactory. Needs verification that this event exists."
+  },
+  "35": {
+    "title": "Craft Pizza & Beats • Five Pizzas Store Pop-Up",
+    "primary": {
+      "url": "https://www.amsterdam-dance-event.nl/en/program/2026/five-pizzas-ade-session/2890264/",
+      "provider": "ade",
+      "type": "ade_page",
+      "status_detection": "manual",
+      "confidence": "low"
+    },
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/five-pizzas-ade-session/2890264/",
+      "ticketLink": "https://www.amsterdam-dance-event.nl/en/program/2026/five-pizzas-ade-session/2890264/"
+    },
+    "notes": "The only Five Pizzas ADE page is the Thursday session (event 19); no Friday pop-up found. Free in the app; keep manual."
+  },
+  "36": {
+    "title": "KiNK Live x Loveland • Mediahaven Studios",
+    "primary": {
+      "url": "https://loveland.nl/ade/",
+      "provider": "loveland",
+      "type": "generic_homepage",
+      "status_detection": "none",
+      "confidence": "low"
+    },
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://loveland.nl",
+      "ticketLink": "https://loveland.nl"
+    },
+    "notes": "No KiNK Live show among Loveland's 11 ADE listings; Friday has Mahmut Orhan and Paradise. Needs verification."
+  },
+  "37": {
+    "title": "Dynamic Melodic Live • Het Sieraad Glass Atrium",
+    "primary": {
+      "url": "https://het-sieraad.nl/",
+      "provider": "het-sieraad",
+      "type": "official_event_page",
+      "status_detection": "html_signal",
+      "confidence": "low",
+      "observed_2026_10_07": "listing row shows TICKETS (available)",
+      "detection_note": "Only usable if the match is confirmed."
+    },
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://het-sieraad.nl",
+      "ticketLink": "https://het-sieraad.nl"
+    },
+    "notes": "Closest Het Sieraad listing is 'ROSE RINGED PRESENTS HRMNY', Fri 23 Oct 17:00-23:00 (app: 18:00-22:30, 'Dynamic Melodic Live'). The title does not match, so this is a guess. Needs verification."
+  },
+  "38": {
+    "title": "Exhale by Amelie Lens • Sugarfactory Refinery",
+    "primary": {
+      "url": "https://audio-obscura.com/ade-x-exhale/",
+      "provider": "audio-obscura",
+      "type": "official_event_page",
+      "status_detection": "none",
+      "confidence": "low"
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/audio-obscura-ade-x-exhale-by-amelie-lens/2820970/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://awakenings.com",
+      "ticketLink": "https://www.ticketswap.com/ade"
+    },
+    "notes": "Exhale by Amelie Lens exists at Audio Obscura (G-Star RAW), Fri 23 Oct 16:00-23:00, but the app says Sugarfactory 23:00-07:00. Venue and time conflict. Needs verification."
+  },
+  "39": {
+    "title": "KI/KI 5 Hours - Day 2 • Ziggo Dome",
+    "primary": {
+      "url": "https://www.mojo.nl/concerten/kiki",
+      "provider": "mojo",
+      "type": "official_event_page",
+      "status_detection": "html_signal",
+      "confidence": "medium",
+      "observed_2026_10_07": "unclear which day is sold out",
+      "detection_note": "Parse the section 'vrijdag 23 oktober 2026'."
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/ki-ki-5-hours-day-2/2802120/",
+    "resale": {
+      "ticketswap_url": "https://ticketswap.com/kiki-ade",
+      "match_confidence": "low",
+      "note": "Evergreen TicketSwap landing page for the promoter or festival. The 2026 edition could not be verified (TicketSwap blocks automated access), and one page may cover several days. Do not treat as a per-event mapping."
+    },
+    "current_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/ki-ki-5-hours-day-2/2802120/",
+      "ticketLink": "https://www.amsterdam-dance-event.nl/en/program/2026/ki-ki-5-hours-day-2/2802120/"
+    },
+    "notes": "Same promoter page as event 25; this is the 'vrijdag 23 oktober' section. Day attribution of the sold-out label needs verification."
+  },
+  "40": {
+    "title": "DGTL Friday Night • NDSM Warehouse",
+    "primary": {
+      "url": "https://dgtl-festival.com/en/dgtl-ade/dgtl-ade-friday-night/",
+      "provider": "dgtl",
+      "type": "official_event_page",
+      "status_detection": "html_signal",
+      "confidence": "high",
+      "observed_2026_10_07": "soldout (app says available)",
+      "detection_note": "Check the page title for the 'SOLD OUT - ' prefix."
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/dgtl-ade-friday-night/2804031/",
+    "resale": {
+      "ticketswap_url": "https://ticketswap.com/dgtl-ade",
+      "match_confidence": "low",
+      "note": "Evergreen TicketSwap landing page for the promoter or festival. The 2026 edition could not be verified (TicketSwap blocks automated access), and one page may cover several days. Do not treat as a per-event mapping."
+    },
+    "current_links": {
+      "eventLink": "https://dgtl-festival.com/en/dgtl-amsterdam/",
+      "ticketLink": "https://dgtl-festival.com/en/dgtl-amsterdam/"
+    },
+    "proposed_links": {
+      "eventLink": "https://dgtl-festival.com/en/dgtl-ade/dgtl-ade-friday-night/",
+      "ticketLink": "https://dgtl-festival.com/en/dgtl-ade/dgtl-ade-friday-night/",
+      "reason": "dgtl.nl moved. Current local commit points at the festival homepage; this page is event-specific."
+    },
+    "notes": "DGTL ADE Friday Night, Fri 23 Oct 23:30-06:30 at NDSM Warehouse. Title starts 'SOLD OUT - ' when sold out."
+  },
+  "41": {
+    "title": "United Techno Heavy Hitters • United Studios",
+    "primary": {
+      "url": "https://unitedtechno.com/",
+      "provider": "unitedtechno",
+      "type": "generic_homepage",
+      "status_detection": "none",
+      "confidence": "low"
+    },
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://unitedtechno.com",
+      "ticketLink": "https://unitedtechno.com"
+    },
+    "notes": "No United Techno ADE listing found on ADE. Generic homepage."
+  },
+  "42": {
+    "title": "Amsterdam Techno Sessions Day 3 • Club John Doe",
+    "primary": {
+      "url": "https://clubjohndoe.nl/",
+      "provider": "clubjohndoe",
+      "type": "generic_homepage",
+      "status_detection": "none",
+      "confidence": "low"
+    },
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://www.amsterdam-techno-sessions.com",
+      "ticketLink": "https://www.amsterdam-techno-sessions.com"
+    },
+    "proposed_links": {
+      "eventLink": "https://clubjohndoe.nl/",
+      "ticketLink": "https://clubjohndoe.nl/",
+      "reason": "Current domain does not resolve. Fallback only, low confidence."
+    },
+    "notes": "No ADE listing for an Amsterdam Techno Sessions after-hours at Club John Doe on Fri. amsterdam-techno-sessions.com does not resolve (no DNS records). ADE's only ATS listing is the Thursday show (event 26)."
+  },
+  "43": {
+    "title": "Radion Friday Afterhours • The Concrete Maze",
+    "primary": {
+      "url": "https://radion.amsterdam/",
+      "provider": "radion",
+      "type": "generic_homepage",
+      "status_detection": "none",
+      "confidence": "low"
+    },
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://radion.amsterdam",
+      "ticketLink": "https://radion.amsterdam"
+    },
+    "notes": "No ADE listing for a Friday afterhours at Radion. Radion sells via Stager (disallowed by robots.txt)."
+  },
+  "44": {
+    "title": "Lofi Friday Late Session • Intimate Acid",
+    "primary": {
+      "url": "https://lofi.amsterdam/",
+      "provider": "lofi",
+      "type": "official_event_page",
+      "status_detection": "html_signal",
+      "confidence": "medium",
+      "observed_2026_10_07": "available (Tickets label)",
+      "detection_note": "Parse the row 'VBX Friday 23.10.2026'."
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/vbx-lofi-ade-23-10/2823084/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://lofi.amsterdam",
+      "ticketLink": "https://lofi.amsterdam"
+    },
+    "notes": "Lofi's site lists 'ADE | VBX Friday 23.10.2026' with Tickets or Sold out. ADE page: VBX x Lofi, Fri 23 Oct 23:30-08:00. App says 04:00-09:00+ 'Friday Late Session', so the title and time differ."
+  },
+  "45": {
+    "title": "Awakenings Saturday Daytime • Gashouder",
+    "primary": {
+      "url": "https://www.awakenings.com/en/events/2026/10/joris-voorn-a-trip-to-galaxy/397200/",
+      "provider": "awakenings",
+      "type": "official_event_page",
+      "status_detection": "html_signal",
+      "confidence": "medium",
+      "observed_2026_10_07": "soldout (app says available)",
+      "detection_note": "Find 'ADE 2026 - JORIS VOORN' in the show list."
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/awakenings-ade-joris-voorn/2806787/",
+    "resale": {
+      "ticketswap_url": "https://www.ticketswap.com/awakenings-ade",
+      "match_confidence": "low",
+      "note": "Evergreen TicketSwap landing page for the promoter or festival. The 2026 edition could not be verified (TicketSwap blocks automated access), and one page may cover several days. Do not treat as a per-event mapping."
+    },
+    "current_links": {
+      "eventLink": "https://awakenings.com",
+      "ticketLink": "https://awakenings.com"
+    },
+    "proposed_links": {
+      "ticketLink": "https://www.awakenings.com/en/events/2026/10/joris-voorn-a-trip-to-galaxy/397200/",
+      "reason": "awakenings.com redirects to www.awakenings.com/en/. Medium confidence."
+    },
+    "notes": "Closest Awakenings show: Joris Voorn, Sat 24 Oct 13:00-21:30 at Sugarfactory. App says 'Saturday Daytime' at Gashouder 12:00-22:00. Day and time-of-day match; venue does not."
+  },
+  "46": {
+    "title": "Deep House Amsterdam Showcase • Het Veronica Schip",
+    "primary": {
+      "url": "https://hetveronicaschip.nl/",
+      "provider": "hetveronicaschip",
+      "type": "generic_homepage",
+      "status_detection": "none",
+      "confidence": "low"
+    },
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://deephouseamsterdam.com",
+      "ticketLink": "https://hetveronicaschip.nl/"
+    },
+    "proposed_links": {
+      "ticketLink": "https://hetveronicaschip.nl/",
+      "reason": "Old domain has a certificate error. Already applied in the local commit."
+    },
+    "notes": "No ADE listing found for Deep House Amsterdam at Het Veronica Schip. deephouseamsterdam.com returns 403 to scripts. veronicaschip.nl redirects to hetveronicaschip.nl."
+  },
+  "47": {
+    "title": "Rhythm Control Instores • Record Store Pop-Up",
+    "primary": {
+      "url": null,
+      "provider": null,
+      "type": "unknown",
+      "status_detection": "none",
+      "confidence": "none"
+    },
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://rhythmcontrol.nl",
+      "ticketLink": "https://rhythmcontrol.nl"
+    },
+    "proposed_links": {
+      "reason": "No replacement found. Suggest removing the link until the event is verified."
+    },
+    "notes": "Rhythm Control Records: rhythmcontrol.nl does not resolve (no DNS records) and nothing was found on ADE. Free in the app. Needs verification that this event exists. Free in the app; keep manual."
+  },
+  "48": {
+    "title": "Warehouse Elementenstraat Special • Audio Visual Day-PopUp",
+    "primary": {
+      "url": "https://elementenstraat.nl/",
+      "provider": "elementenstraat",
+      "type": "generic_homepage",
+      "status_detection": "none",
+      "confidence": "low"
+    },
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://elementenstraat.nl",
+      "ticketLink": "https://elementenstraat.nl"
+    },
+    "notes": "No ADE listing found. Generic homepage (its RA link is not checkable)."
+  },
+  "49": {
+    "title": "Into the Woods ADE Festival • Enchanted Shipyard & Street Food",
+    "primary": {
+      "url": "https://tickets.intothewoods.nl/e1d62665744343338282d223b8af47e6/tickets/e6c196e17b7f4799b054ef7ef61c6ffb",
+      "provider": "intothewoods shop",
+      "type": "ticket_shop",
+      "status_detection": "none",
+      "confidence": "high"
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/into-the-woods-ade-festival-saturday/2826667/",
+    "resale": {
+      "ticketswap_url": "https://www.ticketswap.com/festival-tickets/a/into-the-woods-ade",
+      "match_confidence": "low",
+      "note": "Evergreen TicketSwap landing page for the promoter or festival. The 2026 edition could not be verified (TicketSwap blocks automated access), and one page may cover several days. Do not treat as a per-event mapping."
+    },
+    "current_links": {
+      "eventLink": "https://intothewoods.nl/",
+      "ticketLink": "https://intothewoods.nl/"
+    },
+    "proposed_links": {
+      "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/into-the-woods-ade-festival-saturday/2826667/",
+      "ticketLink": "https://tickets.intothewoods.nl/e1d62665744343338282d223b8af47e6/tickets/e6c196e17b7f4799b054ef7ef61c6ffb",
+      "reason": "Old domain intothewoodsfestival.nl is down (Cloudflare 1016). Domain swap to intothewoods.nl already applied locally; this is more specific."
+    },
+    "notes": "ADE: Into the Woods ADE Festival Saturday, Sat 24 Oct 12:00-23:00 (exact match). The shop host's robots.txt disallows automated access. Official site: intothewoods.nl."
+  },
+  "50": {
+    "title": "Intercell x Levenslang • Former Maximum-Security Prison",
+    "primary": {
+      "url": "https://www.intercell.events/events/intercell-x-eris-drew-octo-octa-ade-by-day-2026",
+      "provider": "intercell",
+      "type": "official_event_page",
+      "status_detection": "html_signal",
+      "confidence": "medium",
+      "observed_2026_10_07": "soldout (app says available)",
+      "detection_note": "Check for the 'Sold out' label on the event page."
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/intercell-x-eris-drew-octo-octa-by-day/2845088/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://intercell.events",
+      "ticketLink": "https://intercell.events"
+    },
+    "notes": "Intercell x Eris Drew & Octo Octa ADE By Day, Sat 24 Oct 14:00-23:00 at Bajes Amsterdam (a former prison). Time matches the app; the app's title and venue name ('Levenslang') differ. The page shows a 'Sold out' label."
+  },
+  "51": {
+    "title": "📌 Johan Cruijff ArenA Main Event • AMF Stadium Peak",
+    "primary": {
+      "url": "https://shop.paylogic.com/5fedd8b869f24d9a9204e6cd6513757e/amf-ticketshop",
+      "provider": "paylogic",
+      "type": "ticket_shop",
+      "status_detection": "none",
+      "confidence": "high"
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/amf-johan-cruijf-arena-2026/2802654/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://amf-festival.com",
+      "ticketLink": "https://amf-festival.com"
+    },
+    "notes": "ADE: AMF at Johan Cruijff ArenA, Sat 24 Oct 21:00-05:00. The Paylogic shop's robots.txt disallows automated access. Tickets already bought (private); keep manual."
+  },
+  "52": {
+    "title": "Loveland Saturday • Mediahaven Studios",
+    "primary": {
+      "url": "https://loveland.nl/ade/909-x-loveland/tickets/",
+      "provider": "loveland",
+      "type": "ticket_shop",
+      "status_detection": "none",
+      "confidence": "high"
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/909-loveland/2808599/",
+    "resale": {
+      "ticketswap_url": "https://www.ticketswap.com/909-loveland-ade",
+      "match_confidence": "low",
+      "note": "Evergreen TicketSwap landing page for the promoter or festival. The 2026 edition could not be verified (TicketSwap blocks automated access), and one page may cover several days. Do not treat as a per-event mapping."
+    },
+    "current_links": {
+      "eventLink": "https://loveland.nl",
+      "ticketLink": "https://loveland.nl"
+    },
+    "notes": "ADE: 909 x Loveland, Sat 24 Oct 12:00-22:00 at Mediahaven (time and venue match the app). The ticket page loads a widget with no readable status."
+  },
+  "53": {
+    "title": "OT301 Saturday Live • Gritty Pre-Party",
+    "primary": {
+      "url": "https://ot301.nl/",
+      "provider": "ot301",
+      "type": "generic_homepage",
+      "status_detection": "none",
+      "confidence": "low"
+    },
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://ot301.nl",
+      "ticketLink": "https://ot301.nl"
+    },
+    "notes": "No ADE listing found for OT301 Saturday. Generic homepage."
+  },
+  "54": {
+    "title": "Free Your Mind Saturday Rave • Warehouse West",
+    "primary": {
+      "url": "https://freeyourmindfestival.nl/",
+      "provider": "freeyourmind",
+      "type": "official_event_page",
+      "status_detection": "html_signal",
+      "confidence": "low"
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/now-here-by-paco-osuna-x-free-your-mind/2842818/",
+    "resale": {
+      "ticketswap_url": "https://www.ticketswap.com/free-your-mind-ade",
+      "match_confidence": "low",
+      "note": "Evergreen TicketSwap landing page for the promoter or festival. The 2026 edition could not be verified (TicketSwap blocks automated access), and one page may cover several days. Do not treat as a per-event mapping."
+    },
+    "current_links": {
+      "eventLink": "https://freeyourmindfestival.nl",
+      "ticketLink": "https://freeyourmindfestival.nl"
+    },
+    "notes": "Free Your Mind lists many ADE shows (Free Your Mind Club, Hemkade, United Studio's). None clearly matches 'Saturday Rave' at H7 Warehouse. ADE has 'Now Here by Paco Osuna x Free Your Mind', Sat 23:00-06:00 at Free Your Mind Club. Needs verification."
+  },
+  "55": {
+    "title": "DGTL Saturday Showcase • NDSM Warehouse",
+    "primary": {
+      "url": "https://dgtl-festival.com/en/dgtl-ade/dgtl-ade-novah-and-friends/",
+      "provider": "dgtl",
+      "type": "official_event_page",
+      "status_detection": "html_signal",
+      "confidence": "medium",
+      "observed_2026_10_07": "soldout (app says available)",
+      "detection_note": "Check the page title for the 'SOLD OUT - ' prefix."
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/dgtl-ade-novah-friends/2804083/",
+    "resale": {
+      "ticketswap_url": "https://ticketswap.com/dgtl-ade",
+      "match_confidence": "low",
+      "note": "Evergreen TicketSwap landing page for the promoter or festival. The 2026 edition could not be verified (TicketSwap blocks automated access), and one page may cover several days. Do not treat as a per-event mapping."
+    },
+    "current_links": {
+      "eventLink": "https://dgtl-festival.com/en/dgtl-amsterdam/",
+      "ticketLink": "https://dgtl-festival.com/en/dgtl-amsterdam/"
+    },
+    "proposed_links": {
+      "eventLink": "https://dgtl-festival.com/en/dgtl-ade/dgtl-ade-novah-and-friends/",
+      "ticketLink": "https://dgtl-festival.com/en/dgtl-ade/dgtl-ade-novah-and-friends/",
+      "reason": "dgtl.nl moved. Medium confidence on which DGTL show this is."
+    },
+    "notes": "Closest DGTL show: Novah & Friends, Sat 24 Oct 23:59-07:30 at NDSM Warehouse (app: 22:00-07:00 'Showcase'). Title starts 'SOLD OUT - '."
+  },
+  "56": {
+    "title": "Radion Saturday Night / Afterhours • Charlotte Vibe - Top Pick",
+    "primary": {
+      "url": "https://radion.amsterdam/",
+      "provider": "radion",
+      "type": "generic_homepage",
+      "status_detection": "none",
+      "confidence": "low"
+    },
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://radion.amsterdam",
+      "ticketLink": "https://radion.amsterdam"
+    },
+    "notes": "No ADE listing found for a Saturday afterhours at Radion."
+  },
+  "57": {
+    "title": "Club John Doe Extended Sessions • Hard Loops",
+    "primary": {
+      "url": "https://clubjohndoe.nl/",
+      "provider": "clubjohndoe",
+      "type": "generic_homepage",
+      "status_detection": "none",
+      "confidence": "low"
+    },
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://clubjohndoe.nl",
+      "ticketLink": "https://clubjohndoe.nl"
+    },
+    "notes": "No matching Club John Doe ADE listing found."
+  },
+  "58": {
+    "title": "Shelter Amsterdam Late Run • Intimate Melodic After",
+    "primary": {
+      "url": "https://shelteramsterdam.nl/",
+      "provider": "shelter",
+      "type": "generic_homepage",
+      "status_detection": "none",
+      "confidence": "low"
+    },
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://shelteramsterdam.nl",
+      "ticketLink": "https://shelteramsterdam.nl"
+    },
+    "notes": "No matching Shelter listing found. Shelter sells via eventix/fourvenues."
+  },
+  "59": {
+    "title": "Awakenings Sunday Closing Marathon • Gashouder",
+    "primary": {
+      "url": "https://www.awakenings.com/en/events/2026/10/sunday-sessions/397253/",
+      "provider": "awakenings",
+      "type": "official_event_page",
+      "status_detection": "html_signal",
+      "confidence": "medium",
+      "observed_2026_10_07": "soldout (matches the app)",
+      "detection_note": "Find 'ADE 2026 - SUNDAY SESSIONS' in the show list."
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/awakenings-ade/2806850/",
+    "resale": {
+      "ticketswap_url": "https://www.ticketswap.com/awakenings-ade",
+      "match_confidence": "low",
+      "note": "Evergreen TicketSwap landing page for the promoter or festival. The 2026 edition could not be verified (TicketSwap blocks automated access), and one page may cover several days. Do not treat as a per-event mapping."
+    },
+    "current_links": {
+      "eventLink": "https://awakenings.com",
+      "ticketLink": "https://www.ticketswap.com/ade"
+    },
+    "proposed_links": {
+      "ticketLink": "https://www.awakenings.com/en/events/2026/10/sunday-sessions/397253/",
+      "reason": "Current ticketLink is generic ticketswap.com/ade. Medium confidence."
+    },
+    "notes": "Closest Awakenings show: Sunday Sessions, Sun 25 Oct 14:00-21:30 at Sugarfactory. App says 'Sunday Closing Marathon' at Gashouder 14:00-23:59. Venue differs."
+  },
+  "60": {
+    "title": "Thuishaven ADE Sunday Closing • Heated Hangars",
+    "primary": {
+      "url": "https://thuishaven.nl/",
+      "provider": "thuishaven",
+      "type": "official_event_page",
+      "status_detection": "html_signal",
+      "confidence": "high",
+      "observed_2026_10_07": "soldout (app says available)",
+      "detection_note": "Parse the listing row for 25-10-2026 'Sunday w/ Polyamor'."
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/thuishaven-ade-sunday-polyamor-presents-davyboi-invites/2802133/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://thuishaven.nl",
+      "ticketLink": "https://thuishaven.nl"
+    },
+    "notes": "Thuishaven's listing row '25 OCT | Sunday w/ Polyamor presents Davyboi invites ... 25-10-2026 13.00-23.00' carries a SOLD OUT label. Time matches the app."
+  },
+  "61": {
+    "title": "The Social Hub City • Free Recovery Chilldown",
+    "primary": {
+      "url": "https://thesocialhub.co/",
+      "provider": "thesocialhub",
+      "type": "generic_homepage",
+      "status_detection": "manual",
+      "confidence": "low"
+    },
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://thesocialhub.co",
+      "ticketLink": "https://thesocialhub.co"
+    },
+    "notes": "No matching ADE listing for the Sunday recovery session. Free in the app; keep manual."
+  },
+  "62": {
+    "title": "Breakfast Club: Second Wind • Free Breakfast & Dental Academy",
+    "primary": {
+      "url": "https://shop.celebratix.io/?t=2pscmt",
+      "provider": "celebratix",
+      "type": "ticket_shop",
+      "status_detection": "none",
+      "confidence": "high"
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/breakfast-club-second-wind/2825013/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://breakfastclub.nl",
+      "ticketLink": "https://breakfastclub.nl"
+    },
+    "notes": "ADE: Breakfast Club: Second Wind, Sun 25 Oct 09:00-19:00 at Radion. Celebratix returns 403 to scripts."
+  },
+  "63": {
+    "title": "Reinier Zonneveld 8hrs LIVE x Loveland • Synthesizer Marathon",
+    "primary": {
+      "url": "https://loveland.nl/ade/reinier",
+      "provider": "loveland",
+      "type": "ticket_shop",
+      "status_detection": "none",
+      "confidence": "high"
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/reinier-zonneveld-8hrs-live-x-loveland/2852425/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://loveland.nl",
+      "ticketLink": "https://loveland.nl"
+    },
+    "notes": "ADE: Reinier Zonneveld 8hrs LIVE x Loveland, Sun 25 Oct 13:00-22:30 at Mediahaven. The ticket page loads a widget with no readable status."
+  },
+  "64": {
+    "title": "Lofi Sunday Closing Session • Raw Warehouse Groove",
+    "primary": {
+      "url": "https://lofi.amsterdam/",
+      "provider": "lofi",
+      "type": "official_event_page",
+      "status_detection": "html_signal",
+      "confidence": "low",
+      "observed_2026_10_07": "listing row exists",
+      "detection_note": "Only usable if the match is confirmed."
+    },
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://lofi.amsterdam",
+      "ticketLink": "https://lofi.amsterdam"
+    },
+    "notes": "Lofi's closest listing is 'ADE | CODA Sunday 25.10.2026'. The app's 'Sunday Closing Session' (17:00-23:00+) is not clearly the same. Needs verification."
+  },
+  "65": {
+    "title": "Shelter Sunday Night Special • Underground Wrap-Up",
+    "primary": {
+      "url": "https://shelteramsterdam.nl/",
+      "provider": "shelter",
+      "type": "generic_homepage",
+      "status_detection": "none",
+      "confidence": "low"
+    },
+    "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/apollonia-curates-vbx-shelter-ade-25-10/2823096/",
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://shelteramsterdam.nl",
+      "ticketLink": "https://shelteramsterdam.nl"
+    },
+    "notes": "ADE has 'Apollonia curates VBX' at Shelter, Sun 25 Oct 23:00-09:00 (app: 21:00-05:00). Times differ, so not matched. Shelter sells via fourvenues (403 to scripts)."
+  },
+  "66": {
+    "title": "Radion Sunday Afters • The Absolute Bastion",
+    "primary": {
+      "url": "https://radion.amsterdam/",
+      "provider": "radion",
+      "type": "generic_homepage",
+      "status_detection": "none",
+      "confidence": "low"
+    },
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://radion.amsterdam",
+      "ticketLink": "https://radion.amsterdam"
+    },
+    "notes": "No matching Radion Sunday listing found."
+  },
+  "67": {
+    "title": "Club John Doe Closing Hours • Intimate Center After",
+    "primary": {
+      "url": "https://clubjohndoe.nl/",
+      "provider": "clubjohndoe",
+      "type": "generic_homepage",
+      "status_detection": "none",
+      "confidence": "low"
+    },
+    "resale": {
+      "ticketswap_url": null,
+      "match_confidence": "none"
+    },
+    "current_links": {
+      "eventLink": "https://clubjohndoe.nl",
+      "ticketLink": "https://clubjohndoe.nl"
+    },
+    "notes": "No matching Club John Doe listing found (ADE has 'Endless Records x UNDRGRND' there on Sun 20:00-04:00)."
+  }
+}
