@@ -95,25 +95,25 @@ Events 8, 11, 23 and 44 show available and agree with the app. Events 21 and 59 
 
 ## Broken or moved URLs you asked about
 
-`Applied locally` means the fix is in commit `ee95b50`, which has not reached GitHub yet because the push was rejected (see the end).
+`Applied` means the fix is already in `index.html` (commit `ee95b50`, live on GitHub Pages).
 
 | ID | Problem | Finding | Status |
 |---|---|---|---|
-| 9 | Awakenings ticket link 404 | Correct page: awakenings.com/en/events/2026/10/ade-opening-night/397108/ (verified, 200). | Applied locally |
+| 9 | Awakenings ticket link 404 | Correct page: awakenings.com/en/events/2026/10/ade-opening-night/397108/ (verified, 200). | Applied |
 | 14 | adamhotel.nl does not resolve | No Loft listing matches Thu 12:00-17:00. Fallback: theloftamsterdam.com (low). | Proposed, low confidence |
-| 22 | ADE page 404 | Event exists as 'Gashouder Presents: I Hate Models & Nico Moreno Invite' (ADE 2804806); Gashouder ticket page says sold out. | Applied locally |
-| 24 | ADE page 404; dgtl.nl moved | ADE page 2803914 and dgtl-festival.com/.../dgtl-ade-thursday/ exist. ADE time 17:00-23:00 vs the app's 23:00-04:00. | Links applied locally; time conflict open |
-| 28 | Certificate error | veronicaschip.nl redirects to hetveronicaschip.nl (verified). | Applied locally |
+| 22 | ADE page 404 | Event exists as 'Gashouder Presents: I Hate Models & Nico Moreno Invite' (ADE 2804806); Gashouder ticket page says sold out. | Applied |
+| 24 | ADE page 404; dgtl.nl moved | ADE page 2803914 and dgtl-festival.com/.../dgtl-ade-thursday/ exist. ADE time 17:00-23:00 vs the app's 23:00-04:00. | Links applied; time conflict open |
+| 28 | Certificate error | veronicaschip.nl redirects to hetveronicaschip.nl (verified). | Applied |
 | 31 | ADE page 404 | The 2026 page has a new id: ritter-butzke-x-casa-ade-cruise/2894214 (exact match); ticket shop is RA. | Proposed (ADE link not yet applied) |
-| 32 | ADE page 404 | Match: Breakfast Club /w Kiosk Radio (ADE 2824185). ADE time Fri 18:00-04:00 vs the app's 10:00-18:00. | Link applied locally; time conflict open |
-| 33 | ADE page 404 | Match: PIP GOES SKATECAFE (ADE 2811268), exact time; real shop skatecafe.weticket.io. | ADE link applied locally; shop link proposed |
-| 40 | dgtl.nl moved | dgtl-festival.com/en/dgtl-ade/dgtl-ade-friday-night/ (event-specific). | Domain applied locally; specific link proposed |
+| 32 | ADE page 404 | Match: Breakfast Club /w Kiosk Radio (ADE 2824185). ADE time Fri 18:00-04:00 vs the app's 10:00-18:00. | Link applied; time conflict open |
+| 33 | ADE page 404 | Match: PIP GOES SKATECAFE (ADE 2811268), exact time; real shop skatecafe.weticket.io. | ADE link applied; shop link proposed |
+| 40 | dgtl.nl moved | dgtl-festival.com/en/dgtl-ade/dgtl-ade-friday-night/ (event-specific). | Domain applied; specific link proposed |
 | 42 | Domain does not resolve | No DNS records at 1.1.1.1 or 8.8.8.8. ADE's only Amsterdam Techno Sessions listing is the Thursday show (event 26). Fallback: clubjohndoe.nl (low). | Proposed, low confidence |
 | 45 | awakenings.com redirect | Closest show is Joris Voorn (Sat 24 Oct, Sugarfactory). The app says Gashouder, so medium confidence. | Proposed, medium confidence |
-| 46 | Certificate error | Same as 28: hetveronicaschip.nl. deephouseamsterdam.com returns 403 to scripts. | Ticket link applied locally |
+| 46 | Certificate error | Same as 28: hetveronicaschip.nl. deephouseamsterdam.com returns 403 to scripts. | Ticket link applied |
 | 47 | Domain does not resolve | No DNS records, and nothing found on ADE. No replacement. | Open; consider removing the link |
-| 49 | intothewoodsfestival.nl down (Cloudflare 1016) | intothewoods.nl works. ADE has a Saturday page (2826667, exact match) and a ticket shop URL. | Domain applied locally; specific links proposed |
-| 55 | dgtl.nl moved | Closest DGTL show is Novah & Friends (Sat 23:59-07:30). Medium confidence. | Domain applied locally; specific link proposed |
+| 49 | intothewoodsfestival.nl down (Cloudflare 1016) | intothewoods.nl works. ADE has a Saturday page (2826667, exact match) and a ticket shop URL. | Domain applied; specific links proposed |
+| 55 | dgtl.nl moved | Closest DGTL show is Novah & Friends (Sat 23:59-07:30). Medium confidence. | Domain applied; specific link proposed |
 
 ## Proposed corrections to `ticketLink` / `eventLink`
 
@@ -123,21 +123,21 @@ From `proposed_links` in `event-sources.json`. Events listed under 'already appl
 |---|---|---|---|
 | 2 | `ADE:zwart-goud-ade-day-1/2889003/` | `ADE:zwart-goud-ade-day-1/2889003/` | Current eventLink (events.musicofourdesire.com) returns 403 to scripts and is a third-party aggregator; the ADE page is official. |
 | 7 | `ADE:the-social-hub-presents-off-the-record-with-kevin-saunderson/29051` | `ADE:the-social-hub-presents-off-the-record-with-kevin-saunderson/29051` | More specific than the generic thesocialhub.co homepage. |
-| 9 | keep | `www.awakenings.com/en/events/2026/10/ade-opening-night/397108/` | Current ticketLink www.awakenings.com/en/events/ade/ returns 404. Already applied in the local commit. |
+| 9 | keep | `www.awakenings.com/en/events/2026/10/ade-opening-night/397108/` | Current ticketLink www.awakenings.com/en/events/ade/ returns 404. Already applied in `index.html`. |
 | 14 | keep | `theloftamsterdam.com/` | Current ticketLink adamhotel.nl does not resolve. Fallback only, low confidence. |
 | 17 | keep | `het-sieraad.nl/` | Current ticketLink is a TicketSwap search URL, which should not be stored. |
 | 18 | `ADE:gashouder-presents-eric-prydz/2834978/` | `ADE:gashouder-presents-eric-prydz/2834978/` | Current eventLink is a dead ADE page (404); ticketLink is a TicketSwap search URL. |
-| 20 | `ADE:paul-kalkbrenner-live-x-loveland/2846832/` | keep | Current eventLink is a dead ADE page (404). Already applied in the local commit. |
+| 20 | `ADE:paul-kalkbrenner-live-x-loveland/2846832/` | keep | Current eventLink is a dead ADE page (404). Already applied in `index.html`. |
 | 21 | `ADE:awakenings-ade-drumcode/2806492/` | `www.awakenings.com/en/events/2026/10/drumcode/397113/` | Current ticketLink is a TicketSwap search URL. |
-| 24 | `ADE:dgtl-ade-thursday/2803914/` | `dgtl-festival.com/en/dgtl-ade/dgtl-ade-thursday/` | Current eventLink is a dead ADE page (404); dgtl.nl moved to dgtl-festival.com. Event link already applied locally. |
-| 28 | `hetveronicaschip.nl/` | `hetveronicaschip.nl/` | Old domain has a certificate error. Already applied in the local commit. |
+| 24 | `ADE:dgtl-ade-thursday/2803914/` | `dgtl-festival.com/en/dgtl-ade/dgtl-ade-thursday/` | Current eventLink is a dead ADE page (404); dgtl.nl moved to dgtl-festival.com. Event link already applied. |
+| 28 | `hetveronicaschip.nl/` | `hetveronicaschip.nl/` | Old domain has a certificate error. Already applied in `index.html`. |
 | 31 | `ADE:ritter-butzke-x-casa-ade-cruise/2894214/` | `ra.co/events/2426450` | Current ADE page (id 2824510) returns 404; the 2026 page has a new id. |
-| 33 | `ADE:skatecafe-x-pip-den-haag/2811268/` | `skatecafe.weticket.io/ade-pip-goes-skatecafe` | Current ADE page returns 404. ADE link already applied locally; the weticket link is the real shop. |
-| 40 | `dgtl-festival.com/en/dgtl-ade/dgtl-ade-friday-night/` | `dgtl-festival.com/en/dgtl-ade/dgtl-ade-friday-night/` | dgtl.nl moved. Current local commit points at the festival homepage; this page is event-specific. |
+| 33 | `ADE:skatecafe-x-pip-den-haag/2811268/` | `skatecafe.weticket.io/ade-pip-goes-skatecafe` | Current ADE page returns 404. ADE link already applied; the weticket link is the real shop. |
+| 40 | `dgtl-festival.com/en/dgtl-ade/dgtl-ade-friday-night/` | `dgtl-festival.com/en/dgtl-ade/dgtl-ade-friday-night/` | dgtl.nl moved. `index.html` currently points at the festival homepage; this page is event-specific. |
 | 42 | `clubjohndoe.nl/` | `clubjohndoe.nl/` | Current domain does not resolve. Fallback only, low confidence. |
 | 45 | keep | `www.awakenings.com/en/events/2026/10/joris-voorn-a-trip-to-galaxy/3972` | awakenings.com redirects to www.awakenings.com/en/. Medium confidence. |
-| 46 | keep | `hetveronicaschip.nl/` | Old domain has a certificate error. Already applied in the local commit. |
-| 49 | `ADE:into-the-woods-ade-festival-saturday/2826667/` | `tickets.intothewoods.nl/e1d62665744343338282d223b8af47e6/tickets/e6c19` | Old domain intothewoodsfestival.nl is down (Cloudflare 1016). Domain swap to intothewoods.nl already applied locally; this is more specific. |
+| 46 | keep | `hetveronicaschip.nl/` | Old domain has a certificate error. Already applied in `index.html`. |
+| 49 | `ADE:into-the-woods-ade-festival-saturday/2826667/` | `tickets.intothewoods.nl/e1d62665744343338282d223b8af47e6/tickets/e6c19` | Old domain intothewoodsfestival.nl is down (Cloudflare 1016). Domain swap to intothewoods.nl already applied; this is more specific. |
 | 55 | `dgtl-festival.com/en/dgtl-ade/dgtl-ade-novah-and-friends/` | `dgtl-festival.com/en/dgtl-ade/dgtl-ade-novah-and-friends/` | dgtl.nl moved. Medium confidence on which DGTL show this is. |
 | 59 | keep | `www.awakenings.com/en/events/2026/10/sunday-sessions/397253/` | Current ticketLink is generic ticketswap.com/ade. Medium confidence. |
 
