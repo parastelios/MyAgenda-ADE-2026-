@@ -4253,6 +4253,63 @@
     }
     loadSavedAvailabilityOverrides();
 
+    // Remote availability (availability.json). The embedded statuses above are the fallback:
+    // the page renders immediately with them, and any failure here leaves them untouched.
+    const AVAILABILITY_URL = 'availability.json';
+    const AVAILABILITY_TIMEOUT_MS = 4000;
+    const AVAILABILITY_VALID_TYPES = ['available', 'soldout', 'free', 'mychoice'];
+    const AVAILABILITY_STATUS_TEXT = {
+      available: { en: 'Available', el: 'Διαθέσιμα' },
+      soldout: { en: 'Sold Out', el: 'Εξαντλήθηκαν' },
+      free: { en: '🆓 Free Entry', el: '🆓 Δωρεάν Είσοδος' }
+    };
+
+    async function fetchAvailability() {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), AVAILABILITY_TIMEOUT_MS);
+      try {
+        const res = await fetch(`${AVAILABILITY_URL}?t=${Date.now()}`, { cache: 'no-store', signal: controller.signal });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        if (!data || typeof data !== 'object' || Array.isArray(data)) throw new Error('not an object');
+        return data;
+      } finally {
+        clearTimeout(timer);
+      }
+    }
+
+    // Applies {id: status} to eventsData. Unknown ids and invalid values are skipped.
+    function applyAvailability(data) {
+      let applied = 0, skipped = 0;
+      Object.keys(data).forEach(id => {
+        const type = data[id];
+        const ev = eventsData.find(e => e.id === Number(id));
+        if (!ev || !AVAILABILITY_VALID_TYPES.includes(type)) { skipped++; return; }
+        if (ev.statusType !== type) {
+          ev.statusType = type;
+          if (AVAILABILITY_STATUS_TEXT[type]) ev.status = { ...AVAILABILITY_STATUS_TEXT[type] };
+        }
+        // Reset/export compare against this baseline, so it follows the published availability.
+        baselineEventStatuses[ev.id] = { statusType: ev.statusType, status: { ...ev.status } };
+        applied++;
+      });
+      return { applied, skipped };
+    }
+
+    async function loadAvailability() {
+      try {
+        const before = eventsData.map(e => e.statusType).join();
+        const { applied, skipped } = applyAvailability(await fetchAvailability());
+        if (skipped) console.warn(`availability.json: skipped ${skipped} invalid entries`);
+        loadSavedAvailabilityOverrides(); // curator's local overrides stay on top
+        if (eventsData.map(e => e.statusType).join() !== before) applyFilters();
+        return applied;
+      } catch (err) {
+        console.warn('availability.json unavailable, using embedded statuses:', err.message);
+        return 0;
+      }
+    }
+
     // Input Listeners
     searchInput.addEventListener('input', applyFilters);
     timeFilter.addEventListener('change', applyFilters);
@@ -4262,6 +4319,7 @@
     updateStaticTexts();
     updateMyScheduleCounter();
     applyFilters();
+    const availabilityReady = loadAvailability();
 
     // DOM Elements for Modals
     const btnRefreshAvailability = document.getElementById('btnRefreshAvailability');
