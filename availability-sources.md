@@ -11,6 +11,9 @@ Human-readable audit for [event-sources.json](event-sources.json) (65 events). R
 | 24 DGTL Thursday | Time 17:00-23:00 at NDSM Warehouse, time category warm (was 23:00-04:00, night). |
 | 32 Breakfast Club x Kiosk Radio | Time 18:00-04:00 at Pllek, time category warm (was 10:00-18:00, noon). The title still says 'Brunch' (not changed). |
 | 34 KNTXT / Filth on Acid, 47 Rhythm Control | Removed. No verified event. Their `availability.json` and `event-sources.json` entries are gone. Remaining IDs are unchanged. |
+| Availability status hidden | Decision: users check the ticket sites we link to. A single flag, `SHOW_AVAILABILITY_STATUS = false` in `index.html`, hides the status pills (cards, map popup, map drawer, map list), the sold-out styling on map pins, the Resale and TicketSwap buttons, and the Availability filter (desktop button and map quick-filter button). Cards show a plain Tickets button. `free` stays visible (the Free pill, the Free RSVP button and the free pins) because it describes the ticket, not availability. The Curator button, the manager and the per-card curator controls are unchanged. Set the flag to `true` to restore everything; this was tested in both states. `availability.json` and its loader stay in place. |
+| Statuses synced to the sources | Events 12, 24, 40, 52 and 60 set to sold out (sources show sold out; high-confidence matches). Events 45, 50 and 55 also show sold out but are medium-confidence matches, so they were not changed. |
+| Event 5 promoter, event 32 title | Event 5 promoter is now Rabanne (as named on the ADE page). Event 32 is now 'Breakfast Club x Kiosk Radio • The Sound of Belgium' (ADE's title); it said 'Brunch'. |
 | Hard-coded totals | 'All (67)', the modal counters, the manager subtitle and the README now say 65. |
 | My Schedule | Saved or shared schedules that still contain 34 or 47 are cleaned on load, so the badge no longer counts removed events. |
 
@@ -47,6 +50,8 @@ The 11 free events are counted once, under Free / manual. The other 54 split int
 
 ### Can primary availability be checked automatically with high confidence?
 
+This only matters if the status display is switched back on (`SHOW_AVAILABILITY_STATUS`). While it is hidden, nothing here is needed to run the site.
+
 **About 17%: 11 of 65 events.** These are events where the right page was matched exactly and the provider shows a readable per-event marker: 8, 9, 11, 12, 17, 21, 22, 23, 24, 40, 60.
 
 A realistic ceiling is **about 28% (18 of 65)**, if the 7 medium-confidence matches are verified: 25, 39, 44, 45, 50, 55, 59. Beyond that, the remaining events sit behind JavaScript-only shops (Weeztix, cm.com, Celebratix), shops that disallow automated access (Stager, Paylogic, the Into the Woods shop), or sites that block scripts (RA, fourvenues), or they have no event-specific page at all.
@@ -82,20 +87,15 @@ Caveats:
 
 ## Observed on 2026-10-07 versus the app
 
-The sources disagree with `availability.json` for these events. Nothing was changed here; this is for the curator to review.
+The sources still disagree with `availability.json` for these medium-confidence matches. They were not changed because the match is not certain. (The status is hidden in the UI at the moment.)
 
 | ID | Event | App says | Source shows | Match confidence |
 |---|---|---|---|---|
-| 12 | Armin van Buuren & Benwal • Gashouder | available | soldout | high |
-| 24 | DGTL ADE Thursday • NDSM Docklands | available | soldout | high |
-| 40 | DGTL Friday Night • NDSM Warehouse | available | soldout | high |
 | 45 | Awakenings Saturday Daytime • Gashouder | available | soldout | medium |
 | 50 | Intercell x Levenslang • Former Maximum-Security | available | soldout | medium |
-| 52 | Loveland Saturday • Mediahaven Studios | available | soldout on both Loveland pages | high |
 | 55 | DGTL Saturday Showcase • NDSM Warehouse | available | soldout | medium |
-| 60 | Thuishaven ADE Sunday Closing • Heated Hangars | available | soldout | high |
 
-Events 8, 11, 23 and 44 show available and agree with the app. Events 21, 59 and (after the 2026-10-08 update) 20 show sold out and agree. Event 17 shows tickets on sale, but the app has it as `mychoice` (tickets already bought), which a ticket site cannot know, so that is not a conflict.
+Events 8, 11, 23 and 44 show available and agree with the app. Events 21 and 59, and (after the 2026-10-08 updates) 12, 20, 24, 40, 52 and 60, show sold out and agree. Event 17 shows tickets on sale, but the app has it as `mychoice` (tickets already bought), which a ticket site cannot know, so that is not a conflict.
 
 ## TicketSwap
 
@@ -104,7 +104,7 @@ Events 8, 11, 23 and 44 show available and agree with the app. Events 21, 59 and
 - TicketSwap returns a bot check (HTTP 202 or 403) to scripts, and the same to the fetch tool. It was not bypassed.
 - Search results are mostly 2021-2025 event pages or evergreen festival landing pages. None could be verified as the 2026 edition with the same date.
 - 14 events carry a low-confidence candidate: 9, 11, 21, 23, 24, 25, 39, 40, 45, 49, 52, 54, 55, 59. These are shared landing pages (`awakenings-ade`, `dgtl-ade`, `kiki-ade`, `free-your-mind-ade`, `909-loveland-ade`, `into-the-woods-ade`). One page can cover several days, so a festival-level count must not be read as one event's availability.
-- No TicketSwap search URLs are stored. Three events currently use search URLs as their `ticketLink` (17, 18, 21), and 38 and 59 use the generic `ticketswap.com/ade`.
+- No TicketSwap search URLs are stored. Three events currently use TicketSwap search URLs as their `ticketLink` (17, 18, 21), and 38 and 59 use the generic `ticketswap.com/ade`. The in-app TicketSwap button, which was shown only for sold-out events, is hidden with the status flag.
 - The Gashouder resale page for event 22 (`event.resale.gashouder.nl`) is stored as `other_resale_url`; it returns 403 to scripts.
 
 ## Broken or moved URLs
@@ -184,7 +184,7 @@ From `proposed_links` in `event-sources.json`. Entries marked 'already applied' 
 | 21 | Awakenings • Drumcode Showcase | awakenings.com/en/events/2026/10/dru | official_event_page | high | html_signal | low | Awakenings Drumcode page. The show list marks it 'Sold out'. Same list covers all Awakenings ADE shows. |
 | 22 | I Hate Models & Nico Moreno Invite • Gas | tickets.gashouder.nl/s/hDH1zEBO | ticket_shop | high | html_signal | none | Gashouder ticket page; title '[Sold Out]'. Curator-provided resale page: event.resale.gashouder.nl (returns 403 to scripts). |
 | 23 | Free Your Mind x TeleTech • 4 The People | freeyourmindfestival.nl | official_event_page | high | html_signal | low | Free Your Mind home page lists '22 oct Free Your Mind x Teletech: 4 the People, Hemkade 48, 6:00 pm' with TICKETS or SOLD OUT. The shop is cm.com... |
-| 24 | DGTL ADE Thursday • NDSM Docklands | dgtl-festival.com/en/dgtl-ade/dgtl-ade- | official_event_page | high | html_signal | low | DGTL Thursday, Thu 22 Oct 17:00-23:00 at NDSM Warehouse. index.html now shows 17:00-23:00 (was 23:00-04:00). Page title starts 'SOLD OUT - ' when... |
+| 24 | DGTL ADE Thursday • NDSM Docklands | dgtl-festival.com/en/dgtl-ade/dgtl-ade- | official_event_page | high | html_signal | low | DGTL Thursday, Thu 22 Oct 17:00-23:00 at NDSM Warehouse. index.html shows 17:00-23:00 (was 23:00-04:00). Page title starts 'SOLD OUT - ' when sold... |
 | 25 | KI/KI 5 Hours Non-Stop • Ziggo Dome | mojo.nl/concerten/kiki | official_event_page | medium | html_signal | low | Promoter page for KI/KI 5 Hours on 22 and 23 Oct at Ziggo Dome. One page, two day sections, with a 'Kaarten UITVERKOCHT' label that appears once.... |
 | 26 | Amsterdam Techno Sessions • Late Basemen | ra.co/events/2519124 | ticket_shop | medium | none | none | ADE: Amsterdam Techno Sessions x Paradox Music, Thu 22 Oct 22:00-08:00 at Club John Doe. App times (04:00-08:00+) look like the late part only. RA... |
 | 27 | The Loft Friday Sessions • 16th-Floor Pa | theloftamsterdam.com | generic_homepage | low | none | none | No matching Loft listing for Fri 12:00-17:00. The Loft's own site lists ADE shows with 'Sold out' labels, but none matches this event. |
@@ -192,7 +192,7 @@ From `proposed_links` in `event-sources.json`. Entries marked 'already applied' 
 | 29 | Audio-Visual Experience • NDSM Loods | ndsmloods.nl | generic_homepage | low | none | none | No ADE listing found. Generic homepage. |
 | 30 | ADE Lab Friday Sessions • Westergas | amsterdam-dance-event.nl/en/ade-lab/ | official_event_page | low | manual | none | Generic ADE Lab page. No separate Friday listing found. |
 | 31 | Ritter Butzke x Casa ADE Cruise • Sailin | ra.co/events/2426450 | ticket_shop | high | none | none | ADE: Ritter Butzke x Casa ADE Cruise, Fri 23 Oct 14:00-21:00 at SUPPER Cruise (exact match). RA is blocked to scripts. |
-| 32 | Breakfast Club x Kiosk Radio • Beach Pav | amsterdam-dance-event.nl/en/program/2026/break | ade_page | high | none | none | ADE: Breakfast Club /w Kiosk Radio, Fri 23 Oct 18:00-04:00 at Pllek. index.html now shows 18:00-04:00 (was 10:00-18:00). The event title still... |
+| 32 | Breakfast Club x Kiosk Radio • Beach Pav | amsterdam-dance-event.nl/en/program/2026/break | ade_page | high | none | none | ADE: Breakfast Club /w Kiosk Radio, Fri 23 Oct 18:00-04:00 at Pllek. index.html shows 18:00-04:00 (was 10:00-18:00) and the title is now... |
 | 33 | PIP Goes Skatecafe • Halfpipe Skatepark  | skatecafe.weticket.io/ade-pip-goes-skatecaf | ticket_shop | high | none | none | ADE: PIP GOES SKATECAFE, Fri 23 Oct 16:00-04:00 at Skatecafe (exact match). The shop page is server-rendered, but no sold-out marker has been seen... |
 | 35 | Craft Pizza & Beats • Five Pizzas Store  | amsterdam-dance-event.nl/en/program/2026/five- | ade_page | low | manual | none | The only Five Pizzas ADE page is the Thursday session (event 19); no Friday pop-up found. Free in the app; keep manual. |
 | 36 | KiNK Live x Loveland • Mediahaven Studio | loveland.nl/ade/ | generic_homepage | low | none | none | No KiNK Live show among Loveland's 11 ADE listings; Friday has Mahmut Orhan and Paradise. Needs verification. |

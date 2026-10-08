@@ -104,7 +104,7 @@
       "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/one-million-black-tour-amsterdam/2916897/",
       "ticketLink": "https://www.amsterdam-dance-event.nl/en/program/2026/one-million-black-tour-amsterdam/2916897/"
     },
-    "notes": "ADE: Rabanne's 1 Million Black Tour with OGUZ, Wed 21 Oct 22:00-01:00 at De Unie, WestWeelde (Klonneplein 4-6; De Unie is a room within WestWeelde). Free entry, limited capacity, RSVP. Corrected in index.html: time, venue, address, coordinates, area, status (free). The ADE page names Rabanne as presenter; the app still lists 808 Studios as promoter (not changed). Free events stay manual."
+    "notes": "ADE: Rabanne's 1 Million Black Tour with OGUZ, Wed 21 Oct 22:00-01:00 at De Unie, WestWeelde (Klonneplein 4-6; De Unie is a room within WestWeelde). Free entry, limited capacity, RSVP. Corrected in index.html: time, venue, address, coordinates, area, status (free). Promoter corrected to Rabanne, which ADE names as presenter. Free events stay manual."
   },
   "6": {
     "title": "The Early Shift • Pizza & Rave Sessions",
@@ -254,7 +254,7 @@
       "type": "ticket_shop",
       "status_detection": "html_signal",
       "confidence": "high",
-      "observed_2026_10_07": "soldout (app says available)",
+      "observed_2026_10_07": "soldout (matches the app after the 2026-10-08 update)",
       "detection_note": "Look for '[Sold Out]' in the page title. The 'available' state was not observed on any Gashouder page."
     },
     "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/gashouder-presents-armin-van-buuren-benwal/2804804/",
@@ -531,7 +531,7 @@
       "type": "official_event_page",
       "status_detection": "html_signal",
       "confidence": "high",
-      "observed_2026_10_07": "soldout (app says available)",
+      "observed_2026_10_07": "soldout (matches the app after the 2026-10-08 update)",
       "detection_note": "Check the page title for the 'SOLD OUT - ' prefix."
     },
     "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/dgtl-ade-thursday/2803914/",
@@ -549,7 +549,7 @@
       "ticketLink": "https://dgtl-festival.com/en/dgtl-ade/dgtl-ade-thursday/",
       "reason": "Current eventLink is a dead ADE page (404); dgtl.nl moved to dgtl-festival.com. Event link already applied in index.html."
     },
-    "notes": "DGTL Thursday, Thu 22 Oct 17:00-23:00 at NDSM Warehouse. index.html now shows 17:00-23:00 (was 23:00-04:00). Page title starts 'SOLD OUT - ' when sold out; it is sold out today but availability.json still says available (not changed)."
+    "notes": "DGTL Thursday, Thu 22 Oct 17:00-23:00 at NDSM Warehouse. index.html shows 17:00-23:00 (was 23:00-04:00). Page title starts 'SOLD OUT - ' when sold out; it is sold out and the app now says so."
   },
   "25": {
     "title": "KI/KI 5 Hours Non-Stop • Ziggo Dome",
@@ -724,7 +724,7 @@
     "proposed_links": {
       "reason": "Already applied in index.html."
     },
-    "notes": "ADE: Breakfast Club /w Kiosk Radio, Fri 23 Oct 18:00-04:00 at Pllek. index.html now shows 18:00-04:00 (was 10:00-18:00). The event title still says 'Brunch', which no longer fits an evening slot (not changed). No ticket link on the ADE page."
+    "notes": "ADE: Breakfast Club /w Kiosk Radio, Fri 23 Oct 18:00-04:00 at Pllek. index.html shows 18:00-04:00 (was 10:00-18:00) and the title is now 'Breakfast Club x Kiosk Radio • The Sound of Belgium' (it said 'Brunch'). No ticket link on the ADE page."
   },
   "33": {
     "title": "PIP Goes Skatecafe • Halfpipe Skatepark & Natural Wine",
@@ -861,7 +861,7 @@
       "type": "official_event_page",
       "status_detection": "html_signal",
       "confidence": "high",
-      "observed_2026_10_07": "soldout (app says available)",
+      "observed_2026_10_07": "soldout (matches the app after the 2026-10-08 update)",
       "detection_note": "Check the page title for the 'SOLD OUT - ' prefix."
     },
     "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/dgtl-ade-friday-night/2804031/",
@@ -1110,7 +1110,7 @@
       "type": "ticket_shop",
       "status_detection": "none",
       "confidence": "high",
-      "observed_2026_10_07": "soldout on both Loveland pages (app says available)"
+      "observed_2026_10_07": "soldout (matches the app after the 2026-10-08 update)"
     },
     "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/909-loveland/2808599/",
     "resale": {
@@ -1284,7 +1284,7 @@
       "type": "official_event_page",
       "status_detection": "html_signal",
       "confidence": "high",
-      "observed_2026_10_07": "soldout (app says available)",
+      "observed_2026_10_07": "soldout (matches the app after the 2026-10-08 update)",
       "detection_note": "Parse the listing row for 25-10-2026 'Sunday w/ Polyamor'."
     },
     "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/thuishaven-ade-sunday-polyamor-presents-davyboi-invites/2802133/",

@@ -685,7 +685,7 @@
               <span class="flex items-center gap-1.5"><span>🕒</span> <span id="labelMapQuickTime">Time</span></span>
               <span class="text-slate-500 text-[10px]">▾</span>
             </button>
-            <button onclick="closeAllFilterModals(); toggleStatusModal(event);" class="flex items-center justify-between p-3 rounded-xl bg-slate-950/80 border border-white/10 hover:border-amber-400/50 text-slate-200 text-xs font-bold cursor-pointer transition">
+            <button id="btnMapQuickStatus" onclick="closeAllFilterModals(); toggleStatusModal(event);" class="flex items-center justify-between p-3 rounded-xl bg-slate-950/80 border border-white/10 hover:border-amber-400/50 text-slate-200 text-xs font-bold cursor-pointer transition">
               <span class="flex items-center gap-1.5"><span>🎟️</span> <span id="labelMapQuickStatus">Availability</span></span>
               <span class="text-slate-500 text-[10px]">▾</span>
             </button>
@@ -942,6 +942,20 @@
 
     let currentLang = 'en'; // DEFAULT TO ENGLISH as requested!
 
+    // Ticket availability (Available / Sold Out) is hidden from the UI: users check the ticket sites we link to.
+    // Set to true to bring back the status pills, resale buttons and the Availability filter.
+    const SHOW_AVAILABILITY_STATUS = false;
+    // Status used for display. With the flag off only 'free' stays visible, because it describes the ticket, not availability.
+    function uiStatusType(ev) {
+      return SHOW_AVAILABILITY_STATUS || ev.statusType === 'free' ? ev.statusType : 'available';
+    }
+    if (!SHOW_AVAILABILITY_STATUS) {
+      ['btnStatusDropdown', 'btnMapQuickStatus'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.classList.add('hidden');
+      });
+    }
+
     // ==========================================
     // COMPLETE DATA WITH DUAL-LANGUAGE CONTENT & VIBE CATEGORY
     // ==========================================
@@ -1051,7 +1065,7 @@
         id: 5, day: 'wed',
         dayLabel: { en: 'Wed 21 Oct', el: 'Τετάρτη 21 Οκτ' },
         timeBlock: '22:00 - 01:00', timeCategory: 'warm',
-        title: 'OGUZ: One Million Black Tour Amsterdam', promoter: '808 Studios',
+        title: 'OGUZ: One Million Black Tour Amsterdam', promoter: 'Rabanne',
         venue: 'De Unie (WestWeelde)',
         area: { en: 'Westerpark', el: 'Westerpark' },
         address: 'Klönneplein 4-6, 1014 DD Amsterdam', venueQuery: 'WestWeelde De Unie Klönneplein Amsterdam',
@@ -1231,8 +1245,8 @@
         area: { en: 'Westerpark', el: 'Westerpark' },
         address: 'Klönneplein 1, 1014 DD Amsterdam', venueQuery: 'Gashouder Westergas Amsterdam',
         coords: [52.3865, 4.8692],
-        status: { en: 'Available (~€65)', el: 'Διαθέσιμα (~65€)' },
-        statusType: 'available',
+        status: { en: 'Sold Out', el: 'Εξαντλήθηκαν' },
+        statusType: 'soldout',
         vibeCategory: 'trance',
         eventTypes: ['art', 'club'],
         artists: ['Armin van Buuren', 'Benwal', 'Special Guests'],
@@ -1533,8 +1547,8 @@
         area: { en: 'NDSM Wharf (Noord)', el: 'NDSM Wharf (Noord)' },
         address: 'NDSM-Plein 28, 1033 WB Amsterdam', venueQuery: 'NDSM Warehouse Amsterdam',
         coords: [52.3992, 4.8945],
-        status: { en: 'Available (~€55-65)', el: 'Διαθέσιμα (~55-65€)' },
-        statusType: 'available',
+        status: { en: 'Sold Out', el: 'Εξαντλήθηκαν' },
+        statusType: 'soldout',
         vibeCategory: 'melodic',
         eventTypes: ['art', 'club'],
         artists: ['DGTL Curated Artists', 'Cutting-edge Live Acts', 'Techno Headliners'],
@@ -1742,7 +1756,7 @@
         id: 32, day: 'fri',
         dayLabel: { en: 'Fri 23 Oct', el: 'Παρ 23 Οκτ' },
         timeBlock: '18:00 - 04:00', timeCategory: 'warm',
-        title: 'Breakfast Club x Kiosk Radio • Beach Pavilion & Brunch',
+        title: 'Breakfast Club x Kiosk Radio • The Sound of Belgium',
         promoter: 'Breakfast Club & Kiosk Radio',
         venue: 'Pllek (NDSM Wharf)',
         area: { en: 'NDSM Wharf / Waterfront', el: 'NDSM Wharf / Παραλία' },
@@ -1937,8 +1951,8 @@
         area: { en: 'NDSM Wharf / Industrial Noord', el: 'NDSM Wharf / Noord' },
         address: 'TT Neveritaweg 15, 1033 WB Amsterdam', venueQuery: 'NDSM Warehouse TT Neveritaweg Amsterdam',
         coords: [52.3995, 4.8940],
-        status: { en: 'Available (~€55-65)', el: 'Διαθέσιμα (~55-65€)' },
-        statusType: 'available',
+        status: { en: 'Sold Out', el: 'Εξαντλήθηκαν' },
+        statusType: 'soldout',
         vibeCategory: 'melodic',
         eventTypes: ['art', 'club'],
         artists: ['DGTL Curated Headliners', 'Dark Melodic Maestros', 'Industrial Residents'],
@@ -2238,8 +2252,8 @@
         area: { en: 'Minervahaven / West Docks', el: 'Minervahaven / Δυτικό Λιμάνι' },
         address: 'Moermanskkade 107, 1013 BC Amsterdam', venueQuery: 'Mediahaven Moermanskkade Amsterdam',
         coords: [52.3996, 4.8778],
-        status: { en: 'Almost Sold Out (~€50)', el: 'Σχεδόν Sold Out (~50€)' },
-        statusType: 'available',
+        status: { en: 'Sold Out', el: 'Εξαντλήθηκαν' },
+        statusType: 'soldout',
         vibeCategory: 'melodic',
         eventTypes: ['club'],
         artists: ['Stephan Bodzin (Live)', 'Guy J', 'Sasha', 'Patrice Bäumel'],
@@ -2458,8 +2472,8 @@
         area: { en: 'Westpoort / Industrial Docks', el: 'Westpoort / Βιομηχανικό Λιμάνι' },
         address: 'Contactweg 68, 1014 AN Amsterdam', venueQuery: 'Thuishaven Contactweg Amsterdam',
         coords: [52.3952, 4.8523],
-        status: { en: 'Available (~€40)', el: 'Διαθέσιμα (~40€)' },
-        statusType: 'available',
+        status: { en: 'Sold Out', el: 'Εξαντλήθηκαν' },
+        statusType: 'soldout',
         vibeCategory: 'melodic',
         eventTypes: ['unusual', 'club'],
         artists: ['Miss Monique style guests', 'Progressive House Headliners', 'Thuishaven Circus Residents'],
@@ -3217,7 +3231,7 @@
       });
 
       // Update Status Trigger Button Label & Style
-      if (labelStatusFilter && btnStatusDropdown) {
+      if (SHOW_AVAILABILITY_STATUS && labelStatusFilter && btnStatusDropdown) {
         if (cur === 'all') {
           labelStatusFilter.textContent = currentLang === 'en' ? 'Availability' : 'Διαθεσιμότητα';
           btnStatusDropdown.className = 'flex items-center justify-between gap-1 px-3 py-2 sm:py-1.5 rounded-xl bg-slate-950/80 border border-white/10 text-slate-300 hover:text-white text-xs font-bold transition cursor-pointer';
@@ -3364,15 +3378,16 @@
         bounds.push([lat, lng]);
 
         const isGoing = myScheduleIds.has(ev.id);
+        const st = uiStatusType(ev);
         let pinClass = 'pin-available';
         let pinIcon = '⚡';
         if (isGoing) {
           pinClass = 'pin-saved';
           pinIcon = '⭐';
-        } else if (ev.statusType === 'free') {
+        } else if (st === 'free') {
           pinClass = 'pin-free';
           pinIcon = '✓';
-        } else if (ev.statusType === 'soldout') {
+        } else if (st === 'soldout') {
           pinClass = 'pin-soldout';
           pinIcon = '!';
         }
@@ -3391,8 +3406,8 @@
         const areaText = ev.area[currentLang];
 
         let ticketBtnLabel = t.ticketsBtn;
-        if (ev.statusType === 'soldout') ticketBtnLabel = t.resaleBtn;
-        else if (ev.statusType === 'free') ticketBtnLabel = t.rsvpBtn;
+        if (st === 'soldout') ticketBtnLabel = t.resaleBtn;
+        else if (st === 'free') ticketBtnLabel = t.rsvpBtn;
 
         const popupContent = `
           <div class="space-y-2 text-left">
@@ -3403,7 +3418,7 @@
             ` : ''}
             <div class="flex items-center justify-between gap-1 text-[11px]">
               <span class="font-extrabold px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300">${dayBadge} • ${ev.timeBlock}</span>
-              <span class="font-extrabold px-2 py-0.5 rounded text-[10px] border ${ev.statusType === 'soldout' ? 'bg-rose-500/20 text-rose-300 border-rose-500/40' : (ev.statusType === 'free' ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40' : 'bg-amber-500/20 text-amber-300 border-amber-500/40')}">${statusText}</span>
+              ${(SHOW_AVAILABILITY_STATUS || st === 'free') ? `<span class="font-extrabold px-2 py-0.5 rounded text-[10px] border ${st === 'soldout' ? 'bg-rose-500/20 text-rose-300 border-rose-500/40' : (st === 'free' ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40' : 'bg-amber-500/20 text-amber-300 border-amber-500/40')}">${statusText}</span>` : ''}
             </div>
             <div>
               <div class="text-[10px] uppercase font-bold text-amber-400">${ev.promoter}</div>
@@ -3426,14 +3441,14 @@
                   class="px-2 py-1 rounded-lg ${isGoing ? 'bg-amber-500 text-black font-extrabold' : 'bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold border border-white/10'} text-[11px] flex items-center gap-1 cursor-pointer transition">
                   ${isGoing ? '⭐ Going ✓' : '☆ + Going'}
                 </button>
-                ${ev.statusType === 'soldout' ? `
+                ${st === 'soldout' ? `
                   <a href="https://www.ticketswap.com/search?q=${encodeURIComponent(ev.title)}" target="_blank" rel="noopener noreferrer" 
                     class="px-2 py-1 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white font-extrabold text-[11px] flex items-center gap-0.5">
                     🔄 TicketSwap
                   </a>
                 ` : ''}
                 <a href="${ev.ticketLink}" target="_blank" rel="noopener noreferrer" 
-                  class="px-2 py-1 rounded-lg ${ev.statusType === 'soldout' ? 'bg-slate-700 hover:bg-slate-600 text-slate-200' : 'bg-amber-500 hover:bg-amber-400 text-black'} font-extrabold text-[11px]">
+                  class="px-2 py-1 rounded-lg ${st === 'soldout' ? 'bg-slate-700 hover:bg-slate-600 text-slate-200' : 'bg-amber-500 hover:bg-amber-400 text-black'} font-extrabold text-[11px]">
                   ${ticketBtnLabel}
                 </a>
               </div>
@@ -3474,13 +3489,14 @@
 
       listEl.innerHTML = events.map(ev => {
         const isGoing = myScheduleIds.has(ev.id);
+        const st = uiStatusType(ev);
         let badgeColor = 'text-amber-400';
         if (isGoing) badgeColor = 'text-amber-300 font-extrabold';
-        else if (ev.statusType === 'free') badgeColor = 'text-emerald-400';
-        else if (ev.statusType === 'soldout') badgeColor = 'text-rose-400';
+        else if (st === 'free') badgeColor = 'text-emerald-400';
+        else if (st === 'soldout') badgeColor = 'text-rose-400';
 
         const dayTag = ev.dayLabel ? ev.dayLabel[currentLang] : ev.day.toUpperCase();
-        const statusSnippet = isGoing ? (currentLang === 'en' ? '⭐ In Schedule' : '⭐ Στο Πρόγραμμα') : ev.status[currentLang].split(' ')[0];
+        const statusSnippet = isGoing ? (currentLang === 'en' ? '⭐ In Schedule' : '⭐ Στο Πρόγραμμα') : ((SHOW_AVAILABILITY_STATUS || st === 'free') ? ev.status[currentLang].split(' ')[0] : ev.timeBlock.split('(')[0].trim());
 
         return `
           <div class="p-2.5 rounded-xl bg-slate-900/70 hover:bg-slate-800/90 border ${isGoing ? 'border-amber-400/50 bg-amber-500/10' : 'border-white/5'} cursor-pointer transition flex items-center justify-between gap-2 group"
@@ -3571,6 +3587,7 @@
       if (!drawer) return;
 
       const isGoing = myScheduleIds.has(ev.id);
+      const st = uiStatusType(ev);
       const mapsUrl = getMapsUrl(ev.venueQuery);
       const t = i18n[currentLang];
       const dayBadge = ev.dayLabel[currentLang];
@@ -3579,8 +3596,8 @@
       const isCurator = isCuratorAuthenticated();
 
       let ticketBtnLabel = t.ticketsBtn;
-      if (ev.statusType === 'soldout') ticketBtnLabel = t.resaleBtn;
-      else if (ev.statusType === 'free') ticketBtnLabel = t.rsvpBtn;
+      if (st === 'soldout') ticketBtnLabel = t.resaleBtn;
+      else if (st === 'free') ticketBtnLabel = t.rsvpBtn;
 
       drawer.innerHTML = `
         <div class="flex items-start justify-between gap-2">
@@ -3589,7 +3606,7 @@
             <span class="text-slate-300 font-semibold">${ev.timeBlock.split('(')[0]}</span>
             <span class="font-bold text-slate-500">•</span>
             ${isGoing ? `<span class="px-2 py-0.5 rounded font-black bg-amber-400 text-black text-[10px] shadow-sm">⭐ ${currentLang === 'en' ? 'GOING' : 'ΘΑ ΠΑΩ'}</span>` : ''}
-            <span class="font-extrabold px-2 py-0.5 rounded text-[10px] border ${ev.statusType === 'soldout' ? 'bg-rose-500/20 text-rose-300 border-rose-500/40' : (ev.statusType === 'free' ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40' : 'bg-amber-500/20 text-amber-300 border-amber-500/40')}">${statusText}</span>
+            ${(SHOW_AVAILABILITY_STATUS || st === 'free') ? `<span class="font-extrabold px-2 py-0.5 rounded text-[10px] border ${st === 'soldout' ? 'bg-rose-500/20 text-rose-300 border-rose-500/40' : (st === 'free' ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40' : 'bg-amber-500/20 text-amber-300 border-amber-500/40')}">${statusText}</span>` : ''}
           </div>
           <button onclick="closeMapEventDrawer()" class="text-slate-400 hover:text-white text-base leading-none p-1 cursor-pointer">✕</button>
         </div>
@@ -3624,14 +3641,14 @@
               class="px-2.5 py-1.5 rounded-lg ${isGoing ? 'bg-amber-500 text-black font-extrabold' : 'bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold border border-white/10'} text-xs flex items-center gap-1 cursor-pointer transition">
               ${isGoing ? '⭐ Going ✓' : '☆ + Going'}
             </button>
-            ${ev.statusType === 'soldout' ? `
+            ${st === 'soldout' ? `
               <a href="https://www.ticketswap.com/search?q=${encodeURIComponent(ev.title)}" target="_blank" rel="noopener noreferrer" 
                 class="px-2.5 py-1.5 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white font-extrabold text-xs flex items-center gap-0.5">
                 🔄 TicketSwap
               </a>
             ` : ''}
             <a href="${ev.ticketLink}" target="_blank" rel="noopener noreferrer" 
-              class="px-3 py-1.5 rounded-lg ${ev.statusType === 'soldout' ? 'bg-slate-700 hover:bg-slate-600 text-slate-200' : 'bg-amber-500 hover:bg-amber-400 text-black'} font-extrabold text-xs">
+              class="px-3 py-1.5 rounded-lg ${st === 'soldout' ? 'bg-slate-700 hover:bg-slate-600 text-slate-200' : 'bg-amber-500 hover:bg-amber-400 text-black'} font-extrabold text-xs">
               ${ticketBtnLabel}
             </a>
           </div>
@@ -3689,12 +3706,13 @@
       cardsView.innerHTML = events.map(ev => {
         const mapsUrl = getMapsUrl(ev.venueQuery);
         const isGoing = myScheduleIds.has(ev.id);
+        const st = uiStatusType(ev);
         const isExpanded = expandedCardIds.has(ev.id);
         const isCurator = isCuratorAuthenticated();
 
         let badgeStyle = 'bg-amber-500/15 text-amber-300 border-amber-500/30';
-        if (ev.statusType === 'free') badgeStyle = 'bg-emerald-500/15 text-emerald-400 border-emerald-500/30';
-        else if (ev.statusType === 'soldout') badgeStyle = 'bg-rose-500/15 text-rose-400 border-rose-500/30';
+        if (st === 'free') badgeStyle = 'bg-emerald-500/15 text-emerald-400 border-emerald-500/30';
+        else if (st === 'soldout') badgeStyle = 'bg-rose-500/15 text-rose-400 border-rose-500/30';
 
         const dayTag = `<span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md bg-amber-500/20 text-amber-300 border border-amber-500/30">${ev.dayLabel[currentLang]}</span>`;
 
@@ -3708,8 +3726,8 @@
         }).join(' ');
 
         let ticketBtnLabel = t.ticketsBtn;
-        if (ev.statusType === 'soldout') ticketBtnLabel = t.resaleBtn;
-        else if (ev.statusType === 'free') ticketBtnLabel = t.rsvpBtn;
+        if (st === 'soldout') ticketBtnLabel = t.resaleBtn;
+        else if (st === 'free') ticketBtnLabel = t.rsvpBtn;
 
         const cardBorder = isGoing ? 'border-amber-400/50 shadow-amber-500/10 shadow-2xl bg-amber-950/15' : 'border-white/10';
 
@@ -3725,9 +3743,9 @@
                 </div>
                 <div class="flex items-center gap-1.5">
                   ${isGoing ? `<span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-amber-400 text-black flex items-center gap-0.5 shadow-sm">⭐ <span>${currentLang === 'en' ? 'GOING' : 'ΘΑ ΠΑΩ'}</span></span>` : ''}
-                  <span class="text-[11px] font-extrabold px-2.5 py-0.5 rounded-full border ${badgeStyle}">
+                  ${(SHOW_AVAILABILITY_STATUS || st === 'free') ? `<span class="text-[11px] font-extrabold px-2.5 py-0.5 rounded-full border ${badgeStyle}">
                     ${ev.status[currentLang]}
-                  </span>
+                  </span>` : ''}
                 </div>
               </div>
 
@@ -3768,14 +3786,14 @@
               </button>
 
               <div class="flex items-center gap-1.5">
-                ${ev.statusType === 'soldout' ? `
+                ${st === 'soldout' ? `
                   <a href="https://www.ticketswap.com/search?q=${encodeURIComponent(ev.title)}" target="_blank" rel="noopener noreferrer" 
                     class="px-2.5 py-1.5 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white font-extrabold text-xs transition shadow flex items-center gap-1">
                     🔄 <span>${t.ticketSwapBtn || 'TicketSwap ↗'}</span>
                   </a>
                 ` : ''}
                 <a href="${ev.ticketLink}" target="_blank" rel="noopener noreferrer" 
-                  class="px-3.5 py-1.5 rounded-xl ${ev.statusType === 'soldout' ? 'bg-slate-700 hover:bg-slate-600 text-slate-200' : 'bg-amber-500 hover:bg-amber-400 text-black'} font-extrabold text-xs transition shadow flex items-center gap-1">
+                  class="px-3.5 py-1.5 rounded-xl ${st === 'soldout' ? 'bg-slate-700 hover:bg-slate-600 text-slate-200' : 'bg-amber-500 hover:bg-amber-400 text-black'} font-extrabold text-xs transition shadow flex items-center gap-1">
                   🎟️ <span>${ticketBtnLabel}</span>
                 </a>
               </div>

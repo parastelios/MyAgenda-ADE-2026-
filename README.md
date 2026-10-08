@@ -17,4 +17,4 @@ Then open http://localhost:8000/index.html.
 - `Going` means "I want to attend" (My Schedule). It does not imply a ticket.
 - The internal availability value `mychoice` means "Tickets Already Bought", not `Going`.
 - The Curator button is public; editing is protected by a PIN. Never put tokens or credentials in client-side code.
-- Planned: move ticket availability into a separate `availability.json`, refreshed by a scheduled GitHub Action.
+- Ticket availability (Available / Sold Out) is hidden in the UI; users check the ticket sites we link to. `SHOW_AVAILABILITY_STATUS` in `index.html` turns it back on. The data stays in `availability.json` (loaded with a fallback to the embedded values), and `event-sources.json` maps each event to its official source.
