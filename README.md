@@ -1,6 +1,6 @@
 # ADE 2026 Interactive Schedule & Map
 
-A static single-page guide to 67 curated events at Amsterdam Dance Event 2026: event cards, filters, a personal schedule and an interactive map. English and Greek.
+A static single-page guide to 65 curated events at Amsterdam Dance Event 2026: event cards, filters, a personal schedule and an interactive map. English and Greek.
 
 Stack: one `index.html`, vanilla JavaScript, Tailwind CSS (CDN), Leaflet 1.9.4 + MarkerCluster, OpenStreetMap. No build step.
 

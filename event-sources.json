@@ -90,9 +90,10 @@
     "primary": {
       "url": "https://www.amsterdam-dance-event.nl/en/program/2026/one-million-black-tour-amsterdam/2916897/",
       "provider": "ade",
-      "type": "ade_page",
-      "status_detection": "none",
-      "confidence": "medium"
+      "type": "free_rsvp",
+      "status_detection": "manual",
+      "confidence": "high",
+      "observed_2026_10_07": "free entry, limited capacity, RSVP (ADE page)"
     },
     "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/one-million-black-tour-amsterdam/2916897/",
     "resale": {
@@ -103,7 +104,7 @@
       "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/one-million-black-tour-amsterdam/2916897/",
       "ticketLink": "https://www.amsterdam-dance-event.nl/en/program/2026/one-million-black-tour-amsterdam/2916897/"
     },
-    "notes": "ADE: OGUZ One Million Black Tour, Wed 21 Oct 22:00-01:00 at WestWeelde (Klonneplein). App says De Unie, 17:00-23:00. Venue and time conflict. ADE page has free entry / RSVP wording and no ticket-shop link."
+    "notes": "ADE: Rabanne's 1 Million Black Tour with OGUZ, Wed 21 Oct 22:00-01:00 at De Unie, WestWeelde (Klonneplein 4-6; De Unie is a room within WestWeelde). Free entry, limited capacity, RSVP. Corrected in index.html: time, venue, address, coordinates, area, status (free). The ADE page names Rabanne as presenter; the app still lists 808 Studios as promoter (not changed). Free events stay manual."
   },
   "6": {
     "title": "The Early Shift • Pizza & Rave Sessions",
@@ -427,7 +428,8 @@
       "provider": "cm.com tickets",
       "type": "ticket_shop",
       "status_detection": "none",
-      "confidence": "high"
+      "confidence": "high",
+      "observed_2026_10_07": "soldout (Loveland program page; Loveland's tickets page still shows a TICKETS button)"
     },
     "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/paul-kalkbrenner-live-x-loveland/2846832/",
     "resale": {
@@ -442,7 +444,7 @@
       "eventLink": "https://www.amsterdam-dance-event.nl/en/program/2026/paul-kalkbrenner-live-x-loveland/2846832/",
       "reason": "Current eventLink is a dead ADE page (404). Already applied in index.html."
     },
-    "notes": "ADE: Paul Kalkbrenner LIVE x Loveland, Thu 22 Oct 19:00-22:30 at Theater Amsterdam (app says 17:00-22:30). The shop is a JavaScript shell with no readable status."
+    "notes": "Loveland publishes 17:30-22:30 at Theater Amsterdam; ADE lists 19:00-22:30. No source says whether 19:00 is the performance start, so index.html shows the organizer's 17:30-22:30. Set to sold out in index.html and availability.json: Loveland's program page says SOLD OUT, as do two aggregator listings; Loveland's tickets page still shows TICKETS with a different ticket-type token, so the evidence is not unanimous. The cm.com shop is a JavaScript shell with no readable status."
   },
   "21": {
     "title": "Awakenings • Drumcode Showcase",
@@ -528,7 +530,7 @@
       "provider": "dgtl",
       "type": "official_event_page",
       "status_detection": "html_signal",
-      "confidence": "medium",
+      "confidence": "high",
       "observed_2026_10_07": "soldout (app says available)",
       "detection_note": "Check the page title for the 'SOLD OUT - ' prefix."
     },
@@ -547,7 +549,7 @@
       "ticketLink": "https://dgtl-festival.com/en/dgtl-ade/dgtl-ade-thursday/",
       "reason": "Current eventLink is a dead ADE page (404); dgtl.nl moved to dgtl-festival.com. Event link already applied in index.html."
     },
-    "notes": "DGTL page title starts with 'SOLD OUT - ' when sold out. ADE lists DGTL Thursday 17:00-23:00 at NDSM Warehouse; the app says 23:00-04:00 (peak night), so the time conflicts."
+    "notes": "DGTL Thursday, Thu 22 Oct 17:00-23:00 at NDSM Warehouse. index.html now shows 17:00-23:00 (was 23:00-04:00). Page title starts 'SOLD OUT - ' when sold out; it is sold out today but availability.json still says available (not changed)."
   },
   "25": {
     "title": "KI/KI 5 Hours Non-Stop • Ziggo Dome",
@@ -708,7 +710,7 @@
       "provider": "ade",
       "type": "ade_page",
       "status_detection": "none",
-      "confidence": "medium"
+      "confidence": "high"
     },
     "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/breakfast-club-w-kiosk-radio-the-sound-of-belgium/2824185/",
     "resale": {
@@ -722,7 +724,7 @@
     "proposed_links": {
       "reason": "Already applied in index.html."
     },
-    "notes": "ADE: Breakfast Club /w Kiosk Radio, Fri 23 Oct 18:00-04:00 at Pllek. App says 10:00-18:00, so the time differs. No ticket link on the ADE page."
+    "notes": "ADE: Breakfast Club /w Kiosk Radio, Fri 23 Oct 18:00-04:00 at Pllek. index.html now shows 18:00-04:00 (was 10:00-18:00). The event title still says 'Brunch', which no longer fits an evening slot (not changed). No ticket link on the ADE page."
   },
   "33": {
     "title": "PIP Goes Skatecafe • Halfpipe Skatepark & Natural Wine",
@@ -748,25 +750,6 @@
       "reason": "Current ADE page returns 404. ADE link already applied in index.html; the weticket link is the real shop."
     },
     "notes": "ADE: PIP GOES SKATECAFE, Fri 23 Oct 16:00-04:00 at Skatecafe (exact match). The shop page is server-rendered, but no sold-out marker has been seen on this provider, so detection is unproven."
-  },
-  "34": {
-    "title": "Awakenings presents KNTXT / Filth on Acid • Gashouder",
-    "primary": {
-      "url": "https://www.awakenings.com/en/",
-      "provider": "awakenings",
-      "type": "generic_homepage",
-      "status_detection": "none",
-      "confidence": "none"
-    },
-    "resale": {
-      "ticketswap_url": null,
-      "match_confidence": "none"
-    },
-    "current_links": {
-      "eventLink": "https://awakenings.com",
-      "ticketLink": "https://www.ticketswap.com/ade"
-    },
-    "notes": "No Awakenings, KNTXT or Filth on Acid listing found for Fri 18:00-22:30 at Gashouder on ADE or awakenings.com. Awakenings' 2026 ADE shows are at Sugarfactory. Needs verification that this event exists."
   },
   "35": {
     "title": "Craft Pizza & Beats • Five Pizzas Store Pop-Up",
@@ -1032,28 +1015,6 @@
     },
     "notes": "No ADE listing found for Deep House Amsterdam at Het Veronica Schip. deephouseamsterdam.com returns 403 to scripts. veronicaschip.nl redirects to hetveronicaschip.nl."
   },
-  "47": {
-    "title": "Rhythm Control Instores • Record Store Pop-Up",
-    "primary": {
-      "url": null,
-      "provider": null,
-      "type": "unknown",
-      "status_detection": "none",
-      "confidence": "none"
-    },
-    "resale": {
-      "ticketswap_url": null,
-      "match_confidence": "none"
-    },
-    "current_links": {
-      "eventLink": "https://rhythmcontrol.nl",
-      "ticketLink": "https://rhythmcontrol.nl"
-    },
-    "proposed_links": {
-      "reason": "No replacement found. Suggest removing the link until the event is verified."
-    },
-    "notes": "Rhythm Control Records: rhythmcontrol.nl does not resolve (no DNS records) and nothing was found on ADE. Free in the app. Needs verification that this event exists. Free in the app; keep manual."
-  },
   "48": {
     "title": "Warehouse Elementenstraat Special • Audio Visual Day-PopUp",
     "primary": {
@@ -1148,7 +1109,8 @@
       "provider": "loveland",
       "type": "ticket_shop",
       "status_detection": "none",
-      "confidence": "high"
+      "confidence": "high",
+      "observed_2026_10_07": "soldout on both Loveland pages (app says available)"
     },
     "ade_url": "https://www.amsterdam-dance-event.nl/en/program/2026/909-loveland/2808599/",
     "resale": {
